@@ -7,7 +7,6 @@ import '../CSS/Service.css'
 import { FaHome } from "react-icons/fa";
 
 function ServiceSection() {
-
     return(
         <Container fluid="xxl" className='service-div py-5 wow fadeInUp'>
             <Container className='px-lg-5'>

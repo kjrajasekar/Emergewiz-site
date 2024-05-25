@@ -9,7 +9,6 @@ import Newsletter from "../Section/NewsletterSec";
 function AboutPage() {
     return(
         <div className="bg-white">
-
             <Container fluid="xxl" className="aboutPage_div py-5 mb-5">
                 <Container className="my-5 py-5 px-lg-5">
                     <Row className="g-5 py-5">

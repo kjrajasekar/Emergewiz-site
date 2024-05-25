@@ -64,12 +64,7 @@ function ProductSection() {
                             </div>
                         </div>
                     </Col>
-
-
                 </Row>
-
-
-
             </Container>
         </Container>
     )

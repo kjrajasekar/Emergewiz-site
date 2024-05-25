@@ -1,15 +1,11 @@
 
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
 import { Container } from "react-bootstrap";
 import '../CSS/Service.css'
-import { FaHome } from "react-icons/fa";
 import CountUp from "react-countup";
 
 function AboutSection() {
-
   return (
     <Container fluid="xxl" className='service-div pb-5 wow fadeInUp' >
       <Container className='px-lg-5 ' >

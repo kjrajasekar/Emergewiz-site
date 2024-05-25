@@ -28,5 +28,4 @@ function Newsletter() {
         </Container>
     )
 }
-
 export default Newsletter;

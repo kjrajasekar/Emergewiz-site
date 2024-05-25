@@ -2,7 +2,6 @@
 import { Row, Col } from 'react-bootstrap';
 import { Container } from "react-bootstrap";
 import React from 'react';
-import Button from 'react-bootstrap/Button';
 import '../CSS/About.css';
 
 
@@ -58,12 +57,7 @@ function HireTrainerSection() {
                             </div>
                         </div>
                     </Col>
-
-
                 </Row>
-
-
-
             </Container>
         </Container>
     );
