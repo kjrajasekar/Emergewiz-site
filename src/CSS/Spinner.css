@@ -1,0 +1,32 @@
+#spinner{
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s ease-out, visibility 0s linear .5s;
+    z-index: 99999;
+}
+
+#spinner.show {
+    transition: opacity .5s ease-out, visibility 0s linear 0s;
+    visibility: visible;
+    opacity: 1;
+}
+
+.text-primary{
+    background-color: #1863c9 !important;;
+
+}
+.spinner-grow{
+    display: inline-block;
+    --bs-spinner-width: 0 !important;
+    --bs-spinner-height: 0 !important;
+}
+.sr-only{
+    border: 0;
+    clip: rect(0,0,0,0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}

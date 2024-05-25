@@ -1,0 +1,50 @@
+.sticky-nav {
+    /* border: thin solid red; */
+    transition: .5s;
+    position: fixed !important;
+    background-color: white;
+    box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.20) !important;
+}
+
+.sticky-nav .brand{
+    margin-left: 100px;
+}
+.sticky-nav .navBody{
+    margin-right: 80px;
+}
+
+.sticky-nav .brandicon {
+    color: #1663cb !important;
+}
+
+.sticky-nav .brandname {
+    color: #1663cb !important;
+}
+
+.sticky-nav .navbar-nav .nav-link {
+    color: black !important;
+    padding-top: 25px;
+    padding-bottom: 25px !important;
+}
+
+.sticky-nav .navbar-nav .nav-link:hover{
+    color: #1863c9 !important;
+}
+
+.sticky-nav .navbar-nav .nav-link::before{
+    background-color: #1863c9 !important;
+    bottom: -2px;
+}
+
+.sticky-nav .dropdown-menu::before{
+  border-bottom: 7px solid #1863c9;
+}
+
+.sticky-nav .SerachForm{
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+.sticky-nav .searchBar-icon{
+    color: #1863c9;
+}

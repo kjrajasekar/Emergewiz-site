@@ -1,0 +1,79 @@
+
+.footer-div{
+    background-color: #1863c9 !important;
+    background: url(../Images/footer.png) center center no-repeat;
+    background-size: contain;
+}
+
+.fadeIn{
+    visibility: visible;
+    animation-delay: 0.1s;
+    animation-name: fadeIn;
+}
+
+.footer-row{
+    color: #F7FAFF;
+}
+
+.GIn-icon{
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.GIn-heading{
+    font-weight: bold;
+}
+
+.GIn-socialM-icon{
+    font-size: large;
+    transition: .5s !important;
+    color: #ffffff  !important;
+    border: thin solid rgba(256, 256, 256, .1) !important;
+    background-color: transparent;
+    border-radius: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.GIn-socialM-icon:hover{
+    background-color: #F7FAFF;
+    color: #1863c9 !important;
+}
+
+.link-heading{
+    font-weight: bold;
+}
+
+.right-arrow{
+    font-size: large;
+}
+
+.linkS{
+    transition: .4s;
+    color: #F7FAFF;
+    text-decoration: none;
+}
+
+.p-link:hover{
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.F-send-icon{
+    position: absolute !important;
+    color: #1863c9;
+    font-size: 25px;
+    margin-top: 0.70rem;
+    margin-left: -40px;
+    /* margin-right: 2rem !important; */
+    /* border: thin solid red !important; */
+}  
+
+.copyright{
+    color: #F7FAFF;
+    padding: 25px 0;
+    font-size: 14px;
+    border-top: 1px solid rgba(256, 256, 256, .1);
+}

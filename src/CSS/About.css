@@ -1,0 +1,152 @@
+
+
+
+@media (max-width: 991px) {
+    .abt-img-col{
+        flex: 0 0 auto !important;
+    }
+}
+
+@media (max-width: 391px){
+    .news_readMore{
+        margin-left: 100px !important;
+    }
+    .icon-div{
+        display: block !important;
+        padding-left: 65px;
+    }
+}
+.About-div{
+    /* border: thin solid red; */
+    background-color: white;
+}
+.abt-title{
+    /* border : thin solid red; */
+    color: #1D1D27 !important;
+    font-weight:600;
+}
+
+.abt-text-div{
+    position: relative;
+}
+
+.abt-text-div::before {
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background: #1863c9;
+}
+
+.abt-text-div::after {
+    position: absolute;
+    content: "";
+    width: 4.5px;
+    height: 4px;
+    bottom: 0;
+    left: 50px;
+    background: #1d1d27;
+}
+
+.abt-text-div h6::before, .abt-text-div h6::after {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    top: 2px;
+    left: 0;
+    background: rgba(33, 66, 177, .5);
+}
+
+.abt-text-div h6::after {
+    top: 5px;
+    left: 3px;
+}
+
+.abt-heading{
+    color: #1863c9 !important;
+    font-weight: 550;
+    padding-left: 1.5rem !important;
+}
+
+.abt-brief{
+    line-height: 150%;
+    color: #888;
+    font-size: 15.9px;
+}
+
+.tick-icon{
+    position: absolute;
+    /* border:  thin solid red; */
+    color: #1863c9;
+    margin-left: -8px;
+    margin-top: -5px;
+    font-size: 30px !important;
+}
+
+.hire-bg-image{
+    background-image: url(./../Images/hire-bg.webp);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 45%;
+}
+.tick-text{
+    color: black;
+    font-weight: 600 !important;
+    font-size: 15px;
+    padding-left: 30px;
+
+
+}
+
+.abt-more-btn{
+    font-size: 16px !important;
+    transition: .5s;
+    border-radius: 50rem !important;
+    color: #fff !important;
+    background-color: #1863c9 !important;
+    border: thin solid #1863c9 !important;
+    padding-top: 7px !important;
+    padding-bottom: 7px !important;
+}
+
+.abt-more-btn:hover{
+    background-color: #ffffff !important;
+    transition: .4s;
+    color: #1863c9  !important;
+}
+
+.socialM-icon{
+    transition: .5s !important;
+    color: #1863c9  !important;
+    border: thin solid #1863c9 !important;
+    background-color: #ffffff !important;
+    border-radius: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.icon-div{
+    display: inline;
+}
+
+.socialM-icon:hover{
+    color: #ffffff  !important;
+    background-color: #1863c9  !important;
+}
+
+.fadeInUp{
+    visibility: visible;
+    animation-delay: 0.1s;
+    animation-name: fadeInUp;
+}
+
+.zoomIn{
+    visibility: visible;
+    animation-name: zoomIn;
+}
+

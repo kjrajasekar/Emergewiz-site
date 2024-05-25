@@ -1,0 +1,32 @@
+/* BackToTopButton.css */
+
+.back-to-top-button {
+    position: fixed;
+    bottom: 20px;
+    right: 15px;
+    background-color: #1863c9;
+    color: #fff;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: opacity 0.3s;
+    opacity: 0;
+  }
+  
+  .back-to-top-button.visible {
+    opacity: 1;
+  }
+
+  .back-to-top{
+    font-size: x-large;
+  }
+  
+  .back-to-top-button:hover{
+    /* border: thin solid rgb(103, 103, 103); */
+    background-color: #1863c9;
+    color: #ffffff;
+  }

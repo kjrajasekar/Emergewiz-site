@@ -1,0 +1,19 @@
+
+.aboutPage_div{
+    background-color: #1863c9 !important;
+    background-image: url(../Images/bg-dot.png), url(../Images/bg-dot.png), url(../Images/bg-round.png), url(../Images/bg-bottom-hero.png);
+    background-position: 10px 10px, bottom 190px right 10px, left 55% top -1px, center bottom -1px;
+    background-repeat: no-repeat;
+}
+
+.about-page-heading{
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.heading-bt-line{
+    width: 90px;
+    margin: 0 auto;
+    color: white !important;
+    margin-top: 10px;
+}

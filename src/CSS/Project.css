@@ -1,0 +1,214 @@
+
+
+.project-div{
+    /* border:  thin solid red; */
+    background-color: white;
+}
+
+.P-section-title{
+    /* border: thin solid red; */
+    position: relative !important;
+}
+
+.title{
+    font-weight: bold;
+    color: #1863c9 !important;
+    position: relative; 
+    display: inline; 
+}
+
+.Project-sub-title{
+    padding-top: 10px;
+    font-weight: bold;
+    color: #1D1D27;
+}
+
+.P-section-title.text-center::before {
+    left: 50%;
+    margin-left: -25px;
+}
+
+.P-section-title.text-center::after {
+    left: 50%;
+    margin-left: 25px;
+}
+
+.P-section-title.text-center h6::before, .P-section-title.text-center h6::after {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    top: 2px;
+    left: 0;
+    background: rgba(33, 66, 177, .5);
+}
+
+.P-section-title.text-center h6::after {
+    top: 5px;
+    left: 3px;
+}
+
+.P-section-title::before {
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 3.5px;
+    bottom: 0;
+    left: 0;
+    background: #1d1d27;
+}
+
+.P-section-title::after {
+    position: absolute;
+    content: "";
+    width: 4.5px;
+    height: 3.5px;
+    bottom: 0;
+    left: 50px;
+    background: #1d1d27;
+}
+
+.fadeInUp{
+    visibility: visible;
+    animation-delay: 0.1s;
+    animation-name: fadeInUp;
+}
+
+.filter-col{
+    text-align: center;
+}
+
+#portfolio-flters .filter-btn {
+    position: relative;
+    display: inline-block;
+    margin: 4px 0 4px;
+    transition: .5s;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: white;
+
+}
+
+#portfolio-flters .filter-btn:hover{
+    color: white !important;
+    background-color: #1863c9;
+}
+
+#portfolio-flters .filter-btn.active {
+    color: white !important;
+    background-color: #1863c9;
+}
+
+#portfolio-flters .filter-btn::after {
+    position: absolute;
+    content: "";
+    right: -1px;
+    bottom: -1px;
+    border-left: 20px solid transparent;
+    border-right: 0 solid transparent;
+    border-bottom: 50px solid #FFFFFF;
+}
+
+.S-box{
+    padding: 0 !important;
+    transition: .5s;
+
+}
+
+.project-row{
+    height: 815.976px;
+}
+
+.Serive-col-1{
+   position: absolute;
+   left: 0px;
+   top: 0px;
+   visibility: visible;
+   transition: .5s;
+
+}
+
+.Serive-col-2{
+    position: absolute;
+    left: 407px;
+    top: 0px;
+    visibility: visible;
+    transition: .5s;
+
+}
+
+.Serive-col-3{
+    position: absolute;
+    left: 815px;
+    top: 0px;
+    visibility: visible;
+    transition: .5s;
+
+}
+
+.Serive-col-4{
+    position: absolute;
+    left: 0px;
+    top: 407px;
+    visibility: visible;
+    transition: .5s;
+
+}
+.Serive-col-5{
+    position: absolute;
+    left: 407px;
+    top: 407px;
+    visibility: visible;
+    transition: .5s;
+
+}
+
+.Serive-col-6{
+    position: absolute;
+    left: 815px;
+    top: 407px;
+    visibility: visible;
+    transition: .5s;
+
+}
+
+.S-img-div{
+    position: relative !important;
+    border-radius: 10px;
+    overflow: hidden !important;
+    transition: .5s;
+
+}
+
+.S-img-div-overlay{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    top: 0;
+    left: 0;
+    background-color: #1863c9 !important;
+    transition: .5s;
+    z-index: 1;
+    opacity: 0;
+}
+
+.S-img-div-overlay:hover{
+    color: white;
+    opacity: .9;
+}
+
+.folder-icon{
+    font-size: 15px;
+    margin-bottom: 2px;
+    margin-right: 6px;
+}
+
+.p-name{
+    padding-top: 5px;
+}

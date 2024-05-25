@@ -1,0 +1,33 @@
+.SerachForm{
+    color: #ffffff;
+    display: flex;
+    padding: 2px;
+    border: 1px solid #6868a6;
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.Search-input{
+    color: #e8e5e5;
+    background: transparent;
+    margin: 0;
+    padding: 7px 8px;
+    font-size: 14px;
+    border: none;
+    width: 160px;
+}
+
+.searchBar-icon{
+    color: white;
+    padding-right: 1px;
+}
+  
+.Search-btn{
+    border: none;
+    background-color: transparent;
+}
+
+input[type="search"]::placeholder {
+    color: #d1cfcf;
+}
