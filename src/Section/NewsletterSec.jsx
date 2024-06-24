@@ -12,7 +12,7 @@ function Newsletter() {
         <Container fluid="xxl" className='Newsletter-div my-3 wow fadeInUp' data-wow-delay="0.1s">
             <Container className='inner-div px-lg-5'>
                 <Row className='Newsletter-row'>
-                    <Col className='col-12 col-lg-6 heading'>
+                    <Col className='  col-lg-6 heading'>
                         <h3>Ready to get started</h3>
                         <p className='sub-title'>Let's turn your ideas into reality today!.</p>
                         <Form>

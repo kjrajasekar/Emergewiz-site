@@ -27,7 +27,7 @@ function HireTrainerSection() {
                                 </p>
 
                             </div>
-                            <div class="row ms-5 mt-5">
+                            <div class="row ms-lg-5 mt-5">
                                 <button class="mybtn">
                                     <span class="text">Get a Quote </span>
                                     <span class="circle">
@@ -46,7 +46,7 @@ function HireTrainerSection() {
                                     Our developers provide cost-effective, cross-platform solutions, utilizing the latest technology to deliver optimal results for corporate projects.
                                 </p>
                             </div>
-                            <div class="row ms-5 mt-5">
+                            <div class="row ms-lg-5 mt-5">
                                 <button class="mybtn">
                                     <span class="text">Get a Quote </span>
                                     <span class="circle">

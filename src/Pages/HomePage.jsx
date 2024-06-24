@@ -18,14 +18,14 @@ function HomePage(){
     <Container fluid="xxl" className="home-div">
       <HeroSection/>
       
-      {/* <ServiceSection/> */}
-      {/* <HireTrainerSection/> */}
-      {/* <AboutSection/> */}
-      {/* <TeamSection /> */}
-      {/* <ProductSection /> */}
-      {/* <Newsletter/> */}
+      <ServiceSection />
+      <HireTrainerSection />
+      <AboutSection />
+      <TeamSection />
+      <ProductSection />
+      <Newsletter />
       {/* <ProjectSection /> */}
-      {/* <FeedbackSection/> */}
+      <FeedbackSection />
   
     </Container>
   )
