@@ -26,11 +26,11 @@ function FooterSection() {
         <Container fluid='xxl' className="footer-div pt-5 wow fadeIn">
             <Container className="py-5 px-lg-5">
                 <Row className="g-5 footer-row">
-                    <Col lg={3} md={6}>
+                    <Col lg={3} xs={12}>
                         <h5 className="mb-4 GIn-heading">Get In Touch</h5>
-                        <p className="p-tag mb-3"> <FaLocationDot className="GIn-icon me-2" />123 Street, New York, USA</p>
-                        <p className="p-tag mb-3"> <FaPhone className="GIn-icon me-2"/>+012 345 67890</p>
-                        <p className="p-tag mb-4"> <IoIosMail className="GIn-icon me-2"/>info@example.com</p>
+                        <p className="p-tag mb-3"> <FaLocationDot className="GIn-icon me-2" />287/3, Standard Towers,<br />Avinashi Main Road, Peelamedu, Coimbatore - 641 004</p>
+                        <p className="p-tag mb-3"> <FaPhone className="GIn-icon me-2" />+91 90 43 49 49 41</p>
+                        <p className="p-tag mb-4"> <IoIosMail className="GIn-icon me-2" />contact@emergewiz.com</p>
                         <div className='icon-div pt-2 d-flex'>
                            <button className='GIn-socialM-icon me-3'><FaFacebookF /></button>
                            <button className='GIn-socialM-icon me-3'><BsTwitterX /></button>
@@ -38,7 +38,7 @@ function FooterSection() {
                            <button className='GIn-socialM-icon'><FaLinkedinIn /></button>
                         </div>
                     </Col>
-                    <Col lg={3} md={6}>
+                    <Col lg={3} xs={12}>
                         <h5 className="mb-4 link-heading">Link</h5>
                         <p className="p-link"><MdOutlineKeyboardArrowRight className="right-arrow" /><Link to="/" className="linkS">Home</Link></p>
                         <p className="p-link"><MdOutlineKeyboardArrowRight className="right-arrow"/><Link to="/about" className="linkS">About Us</Link></p>
@@ -46,7 +46,7 @@ function FooterSection() {
                         <p className="p-link"><MdOutlineKeyboardArrowRight className="right-arrow"/><Link to="/project" className="linkS">Project</Link></p>
                         <p className="p-link"><MdOutlineKeyboardArrowRight className="right-arrow"/><Link to="/" className="linkS">Contact Us</Link></p>
                     </Col>
-                    <Col lg={3} md={6}>
+                    <Col lg={3} xs={12}>
                        <h5 className="mb-4 link-heading">Gallery</h5>
                        <Row className="g-2">
                         <Col className='col-4'><img src={portfolio_1} alt="" className='img-fluid'/></Col>
@@ -57,9 +57,11 @@ function FooterSection() {
                         <Col className='col-4'><img src={portfolio_6} alt="" className='img-fluid'/></Col>
                        </Row>
                     </Col>
-                    <Col lg={3} md={6}>
+                    <Col lg={3} xs={12}>
                        <h5 className="mb-4 link-heading">Newsletter</h5>
-                       <p>Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulpu</p>
+                        <p>
+                            Keep informed with our newest updates, trends, and valuable insights.
+                        </p>
                         <Form>
                             <Form.Group controlId="exampleForm.ControlInput1">
                                <Form.Control type="email" placeholder="Enter Your Email" className="E-mail-bar" />

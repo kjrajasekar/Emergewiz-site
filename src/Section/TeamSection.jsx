@@ -16,17 +16,16 @@ function TeamSection() {
                     <div className='S-section-title position-relative text-center mb-2 pb-2 wow fadeInUp'>
                         <h2 className='Service-sub-title text-white'>RESOURCE AS A SERVICE</h2>
                         <p className='text-white mt-4 mx-3 lh-base '>
-                        As a leading digital transformation company, Emergewiz has mastered advanced technology stacks that lead them to deliver unique and next-gen digital solutions.
+                            Emergewiz, Leading the way in digital transformation, leverages advanced technology stacks to provide groundbreaking and next-generation digital solutions.
                         </p>
                     </div>
                     <Row className="gx-5  ">
-                        <Col xs={12} md={6} className='  '>
+                        <Col xs={12} lg={6} className='  '>
                             <div className="hire-item   ">
                                 <div>
                                     <h4 className='prof'>Frontend Development</h4>
                                     <p  >
-                                        Our Front-end professionals build secure and user-friendly applications delivering high-end solutions to enhance business prospects.high-end solutions to enhance business prospects.
-                                        Our Front-end professionals build secure and user-friendly applications delivering high-end solutions to enhance business prospects.
+                                        At Emergewiz, our skilled frontend developers create attractive and user-friendly websites tailored to your business needs. We focus on making sure your site looks great and works well on all devices, providing a seamless and enjoyable experience for your users.
                                     </p>
                                     <button className='T-socialM-icon'><FaHtml5 /></button>
                                     {/* <button className='T-socialM-icon'><FaCss3 /></button> */}
@@ -37,13 +36,12 @@ function TeamSection() {
                                 </div>
                             </div>
                         </Col>
-                        <Col xs={12} md={6} className=' '>
+                        <Col xs={12} lg={6} className=' '>
                             <div className="hire-item  ">
                                 <div>
                                     <h4 className='prof'>Backend Development</h4>
                                     <p  >
-                                        We have skilled backend professionals creating tailor-made solutions for your business and have many years of experience in offering feature-rich and enhanced user experience.
-                                        We have skilled backend professionals creating tailor-made solutions for your business and have many.
+                                        At Emergewiz, our expert  developers create custom solutions for your business. With years of experience, we build reliable, user-friendly systems that improve your service. Trust Emergewiz for efficient and innovative  development that helps your business grow.
                                     </p>
                                     <button className='T-socialM-icon'><FaNodeJs /></button>
                                     <button className='T-socialM-icon'><FaPython /></button>
@@ -55,13 +53,12 @@ function TeamSection() {
                         </Col>
                     </Row>
                     <Row>
-                        <Col xs={12} md={6} className=' '>
+                        <Col xs={12} lg={6} className=' '>
                             <div className="hire-item  ">
                                 <div>
                                     <h4 className='prof'>Mobile Development</h4>
                                     <p  >
-                                        Build scalable and user-friendly mobile apps on iOS and Android platforms for businesses and leverage our professional’s years of experience in mobile app development.
-                                        Build scalable and user-friendly mobile apps on iOS and Android platforms for businesses and leverage our professional’.
+                                        Emergewiz specializes in developing high-quality mobile apps for both iOS and Android platforms. Our experienced team builds intuitive, engaging, and performance-driven apps designed to meet your business goals and provide a great user experience.
                                     </p>
                                     <button className='T-socialM-icon'><SiFlutter /></button>
                                     <button className='T-socialM-icon'><SiSwift /></button>
@@ -69,13 +66,12 @@ function TeamSection() {
                                 </div>
                             </div>
                         </Col>
-                        <Col xs={12} md={6} className=' '>
+                        <Col xs={12} lg={6} className=' '>
                             <div className="hire-item  ">
                                 <div>
                                     <h4 className='prof'> Database Development</h4>
                                     <p  >
-                                    Our professionals help in powering enhanced business outcomes with premium database development with our experienced database design and development experts.
-                                    Our professionals help in powering enhanced business outcomes with premium database.powering enhanced business outcomes with premium database.
+                                        Our experts at Emergewiz design and manage reliable and efficient databases to support your business operations. We focus on ensuring your data is secure, well-organized, and easily accessible, providing a strong foundation for your applications and services.
                                     </p>
                                     <button className='T-socialM-icon'><SiMongodb /></button>
                             <button className='T-socialM-icon'><SiMysql /></button>

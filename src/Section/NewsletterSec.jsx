@@ -12,9 +12,9 @@ function Newsletter() {
         <Container fluid="xxl" className='Newsletter-div my-3 wow fadeInUp' data-wow-delay="0.1s">
             <Container className='inner-div px-lg-5'>
                 <Row className='Newsletter-row'>
-                    <Col className='col-12 col-md-6 heading'>
+                    <Col className='col-12 col-lg-6 heading'>
                         <h3>Ready to get started</h3>
-                        <p className='sub-title'>Diam elitr est dolore at sanctus nonumy.</p>
+                        <p className='sub-title'>Let's turn your ideas into reality today!.</p>
                         <Form>
                             <Form.Group controlId="exampleForm.ControlInput1">
                                 <Form.Control type="email" placeholder="Enter Your Email" className="E-mail-bar" />
@@ -22,7 +22,7 @@ function Newsletter() {
                             </Form.Group>
                         </Form>
                     </Col>
-                 <Col className='col-md-6 text-center mb-n5 d-none d-md-block'><img src={newsletter} alt="newsletter-img" className='newsletter-img mt-5'/></Col>
+                    <Col className='col-lg-6 text-center mb-n5 d-none d-md-block'><img src={newsletter} alt="newsletter-img" className='newsletter-img mt-5' /></Col>
                 </Row>
             </Container>
         </Container>

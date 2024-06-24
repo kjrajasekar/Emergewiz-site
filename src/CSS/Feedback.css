@@ -7,7 +7,7 @@
 }
 
 .carousel-indicators {
-  /* display: none !important; */
+  display: none !important;
 }
 
 .carousel-control-prev,
@@ -180,8 +180,11 @@
 /* ends */
 .client_img {
   position: absolute;
-  height: 55px;
   border-radius: 50px;
+  right: 0;
+  
+    top: -2%;
+    /* z-index: 2; */
 }
 
 .fadeInUp {
@@ -194,11 +197,14 @@
   width: 35% !important;
 }
 
+
 @media screen and (max-width:600px) {
   .mybtn {
     width: 55% !important;
   }
-
+ .img-fluid {
+   height: 250px !important;
+ }
   .product-section .mybtn {
     width: 45% !important;
   }

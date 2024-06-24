@@ -12,55 +12,38 @@ function ProductSection() {
                 <div className='S-section-title position-relative text-center mb-2 pb-2 wow fadeInUp'>
                     <h2 className='Service-sub-title '>Our Products</h2>
                     <p className=' mx-3 mt-3 lh-base text-start'>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever
-                        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five
-                        centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p>
+                        Our products are designed to fit different needs, making your work easier and more efficient. Whether you want to improve operations, engage customers better, or grow your business, EmergeWiz has the right tools for you. Experience the future of business with EmergeWiz – where great ideas become reality.
+                    </p>
                 </div>
 
                 <Row className="product-section gx-5">
-                    <Col xs={12} md={6} className=' '>
+                    <Col xs={12} lg={6} className=' '>
                         <div className="hire-item ">
                             <div className=" text-center">
                                 <img src={smartstorez} alt="smartstorez" className="w-75" />
                                 <h4 className='text-center'>Smartstorez</h4>
                                 <p className="m-3"  >
-                                    Our tech masters create end to end e-commerce solutions with
-                                    customized design which allows your customers to buy products in
-                                    an hassle-free way. Our open cart builds are integrated with
-                                    remarkable payment interface, navigable web page that gives an
-                                    easy to navigate store front.</p>
+                                    Smartstorez provides a powerful multi-vendor marketplace software designed for businesses. Key features include product management,  product reviews, tax handling, user management, inventory tracking, discounts, detailed reports, integrated shipping, and more. Our solution operates on a subscription basis, ensuring affordability and scalability for your business.</p>
                             </div>
                             <div class="row  justify-content-center ">
-                                {/* <button class="mybtn"> */}
+
                                     <span > Get a Quote <FaArrowRight /> </span>
-                                    {/* <span class="circle">
-                                        <span class="arrow">
-                                        </span>
-                                    </span>
-                                </button> */}
+
                             </div>
                         </div>
                     </Col>
-                    <Col xs={12} md={6} className=' '>
+                    <Col xs={12} lg={6} className=' '>
                         <div className="hire-item  ">
                         <div className=" text-center">
                                 <img src={logistics} alt="smartstorez" className="w-75" />
                                 <h4 className='text-center'>Logistics</h4>
-                                <p className="m-3" > Our tech masters create end to end e-commerce solutions with
-                                    customized design which allows your customers to buy products in
-                                    an hassle-free way. Our open cart builds are integrated with
-                                    remarkable payment interface, navigable web page that gives an
-                                    easy to navigate store front.</p>
+                                <p className="m-3" >
+                                    Logistics services designed to optimize your supply chain and streamline operations. Our offerings include secure warehousing solutions for efficient inventory management, real-time tracking of stock levels, and timely order fulfillment services. We ensure reliable transportation options and handle customs clearance seamlessly, facilitating smooth import and export processes.</p>
                                     
                                     </div>
-                                    <div class="row  justify-content-center ">
-                                {/* <button class="mybtn"> */}
+                            <div class="row  justify-content-center ">
                                     <span > Get a Quote <FaArrowRight /> </span>
-                                    {/* <span class="circle"> */}
-                                        {/* <span class="arrow">
-                                        </span>
-                                    </span> */}
-                                {/* </button> */}
+
                             </div>
                         </div>
                     </Col>

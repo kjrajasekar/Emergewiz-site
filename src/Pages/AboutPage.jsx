@@ -21,8 +21,7 @@ function AboutPage() {
             </Container>
             <AboutSection/>
             <Newsletter/>
-            <TeamSection/>
-            
+            <TeamSection/>  
         </div>
     )
 }

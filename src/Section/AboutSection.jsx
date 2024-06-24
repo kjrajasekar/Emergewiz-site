@@ -13,8 +13,7 @@ function AboutSection() {
 
           <h2 className='Service-sub-title'>WHO WE ARE</h2>
           <p className='mx-5 lh-base'>
-            Our solutions offer a real-time platform with clean designs and indulging an array of high-end technology tools and techniques with flexibility and ease.
-            Our solutions offer a real-time platform with clean designs and indulging an array of high-end technology tools and techniques with flexibility and ease.
+            EmergeWiz specializes in creating innovative and customized digital solutions tailored to meet the unique needs of each business. Their comprehensive range of services includes web design, web development, SEO, social media marketing, and PPC advertising. With a team of skilled professionals and a client-centric approach, EmergeWiz ensures that every project not only meets but exceeds client expectations, driving growth and success in the digital landscape.
           </p>
         </div>
 

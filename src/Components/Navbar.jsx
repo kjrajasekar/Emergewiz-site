@@ -14,6 +14,7 @@ import React, { useState, useEffect } from 'react';
 import { Route, Routes, Link } from 'react-router-dom';
 import SearchForm from './SearchBar';
 import logo from './../Images/logo.png'
+import ContactPage from '../Pages/ContactPage';
 
 function Navibar() {
   const [stickyClass, setStickyClass] = useState('');
@@ -64,12 +65,12 @@ function Navibar() {
                 <Nav.Link as={Link} to="/service" className='navLinks navLink3 mx-4'>Service</Nav.Link>
                 <Nav.Link as={Link} to="/project" className='navLinks navLink4 mx-4'>Products</Nav.Link>
                 <Nav.Link as={Link} to="/career" className='navLinks navLink4 mx-4'>Career</Nav.Link>
-                <NavDropdown title="Pages" className='navLinks' id={`offcanvasNavbarDropdown-expand-${expand}`}show={showDropdown} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+                {/* <NavDropdown title="Pages" className='navLinks' id={`offcanvasNavbarDropdown-expand-${expand}`}show={showDropdown} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
                   <NavDropdown.Item as={Link} to="/" className='drop-link mb-1'>Page 1</NavDropdown.Item>
                   <NavDropdown.Item as={Link} to="/" className='drop-link mb-1'>Page 2</NavDropdown.Item>
                   <NavDropdown.Item as={Link} to="/" className='drop-link mb-1'>Page 3</NavDropdown.Item>
                   <NavDropdown.Item as={Link} to="/" className='drop-link mb-1'>Page 4</NavDropdown.Item>
-                </NavDropdown>
+                </NavDropdown> */}
                 <Nav.Link as={Link} to="/contact" className='navLinks navLink5 mx-4'>Contact</Nav.Link>
               </Nav>
               {/* <SearchForm/> */}
@@ -82,7 +83,8 @@ function Navibar() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/service" element={<ServicePage />} />
         <Route path="/project" element={<ProjectPage />} />
-        {/* <Route path="/contact" element={< />} /> */}
+        <Route path="/contact" element={<ContactPage />} />
+        <Route path="*" element={<ContactPage />} />
       </Routes>
     </Container> 
   )

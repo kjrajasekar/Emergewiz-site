@@ -39,9 +39,9 @@ function ProjectSection() {
                 <div className='P-section-title position-relative text-center mb-5 pb-2 wow fadeInUp'>
                     <h6 className='title ps-4'>Our Projects</h6>
                     <h2 className='Project-sub-title'>Recently Launched Projects</h2>
-                    <p  className="lh-base mx-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever
-since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five
-centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                    <p className="lh-base mx-3">
+                        Experience the forefront of innovation with Emergewiz's latest projects, where creativity knows no bounds. Explore our innovative technologies and inventive solutions as we redefine industry standards and pioneer future advancements.
+                    </p>
                 </div>
                 <Row className="filter-row wow fadeInUp" data-wow-delay="0.1s">
                     <Col className="filter-col mb-5" id="portfolio-flters">
