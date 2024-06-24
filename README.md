@@ -1,2 +1,2 @@
 # Emergewiz-site
- the emerwiz website using react full code
+ the emerwiz website using react -full code
