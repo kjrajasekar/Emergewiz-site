@@ -28,7 +28,6 @@ function TeamSection() {
                                         At Emergewiz, our skilled frontend developers create attractive and user-friendly websites tailored to your business needs. We focus on making sure your site looks great and works well on all devices, providing a seamless and enjoyable experience for your users.
                                     </p>
                                     <button className='T-socialM-icon'><FaHtml5 /></button>
-                                    {/* <button className='T-socialM-icon'><FaCss3 /></button> */}
                                     <button className='T-socialM-icon'><SiJavascript /></button>
                                     <button className='T-socialM-icon'><FaAngular /></button>
                                     <button className='T-socialM-icon'><FaReact /></button>

@@ -1,10 +1,9 @@
 import React from "react";
-import '../CSS/Team.css';
+import '../CSS/Contact.css';
 import { Container } from "react-bootstrap";
 import { Row, Col } from 'react-bootstrap';
 import { FaPhone, FaLocationArrow } from "react-icons/fa";
 import { IoMdMail, } from "react-icons/io";
-import logistics from './../Images/newsletter.png'
 
 function ContactSection() {
     return (
@@ -18,7 +17,7 @@ function ContactSection() {
                 </div>
 
                 <Row className="product-section gx-5">
-                    <Col xs={12} md={6} className=' '>
+                    <Col xs={12} lg={6} className=' '>
                         <div className="hire-item  ">
                             <div className="container text-start">
                                 <h3>Phone</h3>
@@ -27,7 +26,6 @@ function ContactSection() {
                                     +91-9043494941
                                 </span>
                             </div>
-
                             <div className="container text-start my-3">
                                 <h3>Email</h3>
                                 <IoMdMail />
@@ -45,32 +43,29 @@ function ContactSection() {
                                     Coimbatore – 641 004.
                                 </span>
                             </div>
-                            <div class="row  justify-content-center ">
-
-
-
-                            </div>
                         </div>
                     </Col>
-                    <Col xs={12} md={6} className=' '>
-                        {/* <div className="hire-item  ">
-                            <div className=" text-center">
-                                <img src={logistics} alt="smartstorez" className="w-75" />
-                                <h4 className='text-center'>Logistics</h4>
-                                <p className="m-3" >
-                                    Logistics services designed to optimize your supply chain and streamline operations. Our offerings include secure warehousing solutions for efficient inventory management, real-time tracking of stock levels, and timely order fulfillment services. We ensure reliable transportation options and handle customs clearance seamlessly, facilitating smooth import and export processes.</p>
-
-                            </div>
-                            <div class="row  justify-content-center ">
-
-
-
-                            </div>
-                        </div> */}
+                    <Col xs={12} lg={6} className='contact  '>
+                        <div className='hire-item' >
+                            <h1>Contact <span> us</span></h1>
+                            <form id='contact-form' method='POST'>
+                                <label htmlFor='name'>Full Name</label>
+                                <input name='name' placeholder='Enter full name...' type='text' />
+                                <label htmlFor='email'>Email</label>
+                                <input name='email' placeholder='Enter email...' type='email' />
+                                <label htmlFor='message'>Message</label>
+                                <textarea
+                                    name='message'
+                                    rows='6'
+                                    placeholder='Enter message...'
+                                    required></textarea>
+                                <button type='submit' id='formButton'>Send message</button>
+                            </form>
+                        </div>
                     </Col>
                 </Row>
                 <Row>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1164.2878753881016!2d77.0114269624909!3d11.024967535152522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba858d6984f4bb7%3A0x4eb0f5060c1a4719!2sNschool%20Academy!5e0!3m2!1sen!2sin!4v1719034096955!5m2!1sen!2sin" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3293.109185713824!2d77.01117902326185!3d11.024451547001405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba857730bb2abd5%3A0x27a2cfe9b594b986!2sEmergewiz%20Technologies%20Private%20Limited!5e0!3m2!1sen!2sin!4v1719230697391!5m2!1sen!2sin" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </Row>
             </Container >
         </Container >

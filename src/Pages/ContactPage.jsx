@@ -2,13 +2,12 @@ import React from 'react';
 import { Container } from "react-bootstrap";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import '../CSS/ProjectPage.css'
+// import '../CSS/ProjectPage.css'
 import ContactSection from '../Section/ContactSection';
 
 function ContactPage() {
     return (
         <div className="bg-white">
-
             <Container fluid="xxl" className="projectPage_div py-5 mb-5">
                 <Container className="my-5 py-5 px-lg-5">
                     <Row className="g-5 py-5">
@@ -20,7 +19,6 @@ function ContactPage() {
                 </Container>
             </Container>
             <ContactSection />
-
         </div>
     )
 }

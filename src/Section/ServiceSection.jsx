@@ -11,8 +11,6 @@ function ServiceSection() {
         <Container fluid="xxl" className='service-div py-5 wow fadeInUp'>
             <Container className='px-lg-5'>
                 <div className='S-section-title position-relative text-center mb-5 pb-2 wow fadeInUp'>
-                    {/* <h6 className='title ps-4'> Features Designed For You
- </h6> */}
                     <h2 className='Service-sub-title'>What Solutions We Provide</h2>
                     <p className='mx-5 lh-base'>
                         An innovative IT company specializing in website development, digital marketing, mobile app creation, graphic design. Transform your online presence and reach new heights with our comprehensive, expert services.
@@ -44,7 +42,7 @@ function ServiceSection() {
                                 <Card.Text>
                                     Developing high-performance  apps tailored to your business needs, drive user engagement and foster connections with customers.
                                 </Card.Text>
-                                <Button className='rad-mor  '>Read More</Button>
+                                <Button className='rad-mor '>Read More</Button>
                             </Card.Body>
                         </Card>
                     </Col>

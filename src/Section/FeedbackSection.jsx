@@ -5,9 +5,6 @@ import { Carousel } from 'react-bootstrap';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { FaQuoteLeft } from "react-icons/fa";
-import testimonial_img from '../Images/testimonial-1.jpg';
-import testimonial_img2 from '../Images/testimonial-2.jpg';
-import testimonial_img3 from '../Images/testimonial-3.jpg';
 
 const testimonials = [
     {
@@ -74,9 +71,6 @@ const TestimonialCarousel = () => {
                 </Carousel>
             </Container>
         </Container>
-
-
-
     )
 }
 

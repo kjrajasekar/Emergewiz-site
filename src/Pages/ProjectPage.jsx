@@ -4,6 +4,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import ProjectSection from '../Section/ProjectSection';
 import '../CSS/ProjectPage.css'
+import ProductSection from '../Section/ProductSection';
 
 function ProjectPage() {
     return(
@@ -19,7 +20,7 @@ function ProjectPage() {
                     </Row>
                 </Container>
             </Container>
-            <ProjectSection/>
+            <ProductSection />
 
         </div>
     )

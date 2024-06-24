@@ -44,7 +44,7 @@ function FooterSection() {
                         <p className="p-link"><MdOutlineKeyboardArrowRight className="right-arrow"/><Link to="/about" className="linkS">About Us</Link></p>
                         <p className="p-link"><MdOutlineKeyboardArrowRight className="right-arrow"/><Link to="/service" className="linkS">Service</Link></p>
                         <p className="p-link"><MdOutlineKeyboardArrowRight className="right-arrow"/><Link to="/project" className="linkS">Project</Link></p>
-                        <p className="p-link"><MdOutlineKeyboardArrowRight className="right-arrow"/><Link to="/" className="linkS">Contact Us</Link></p>
+                        <p className="p-link"><MdOutlineKeyboardArrowRight className="right-arrow" /><Link to="/contact" className="linkS">Contact Us</Link></p>
                     </Col>
                     <Col lg={3} xs={12}>
                        <h5 className="mb-4 link-heading">Gallery</h5>
