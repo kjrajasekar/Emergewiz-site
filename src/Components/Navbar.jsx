@@ -7,12 +7,9 @@ import ProjectPage from '../Pages/ProjectPage';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
-import { FaMagnifyingGlass } from "react-icons/fa6";
 import React, { useState, useEffect } from 'react';
 import { Route, Routes, Link } from 'react-router-dom';
-import SearchForm from './SearchBar';
 import logo from './../Images/logo.png'
 import ContactPage from '../Pages/ContactPage';
 
@@ -31,15 +28,14 @@ function Navibar() {
     }
   };
 
-  const [showDropdown, setShowDropdown] = useState(false);
+  // const [showDropdown, setShowDropdown] = useState(false);
+  // const handleMouseEnter = () => {
+  //   setShowDropdown(true);
+  // };
 
-  const handleMouseEnter = () => {
-    setShowDropdown(true);
-  };
-
-  const handleMouseLeave = () => {
-    setShowDropdown(false);
-  };
+  // const handleMouseLeave = () => {
+  //   setShowDropdown(false);
+  // };
 
   return (
     <Container fluid="xxl" className='position-relative p-0'>

@@ -2,7 +2,7 @@ import React from "react";
 import '../CSS/Team.css';
 import { Container } from "react-bootstrap";
 import { Row, Col } from 'react-bootstrap';
-import { FaAngular, FaReact, FaHtml5, FaCss3, FaVuejs, FaPython, } from "react-icons/fa";
+import { FaAngular, FaReact, FaHtml5, FaVuejs, FaPython, } from "react-icons/fa";
 import { FaNodeJs, FaLaravel, FaPhp } from "react-icons/fa";
 import { SiFlutter, SiJavascript, SiAndroid, SiSwift, SiDjango } from "react-icons/si";
 import { SiMongodb, SiMysql, SiPostgresql, SiSqlite, SiMicrosoftsqlserver } from "react-icons/si";

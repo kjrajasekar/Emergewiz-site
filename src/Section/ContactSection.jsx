@@ -109,7 +109,7 @@ function ContactSection() {
                     </Col>
                 </Row>
                 <Row>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3293.109185713824!2d77.01117902326185!3d11.024451547001405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba857730bb2abd5%3A0x27a2cfe9b594b986!2sEmergewiz%20Technologies%20Private%20Limited!5e0!3m2!1sen!2sin!4v1719230697391!5m2!1sen!2sin" width="600" height="450" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe title="Emergewiz-location" src=" https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3293.109185713824!2d77.01117902326185!3d11.024451547001405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba857730bb2abd5%3A0x27a2cfe9b594b986!2sEmergewiz%20Technologies%20Private%20Limited!5e0!3m2!1sen!2sin!4v1719230697391!5m2!1sen!2sin" width="600" height="450" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                 </Row>
             </Container >
         </Container >

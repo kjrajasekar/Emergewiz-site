@@ -5,7 +5,6 @@ import AboutSection from "../Section/AboutSection";
 import Newsletter from "../Section/NewsletterSec";
 import HeroSection from '../Section/HeroSection';
 import ServiceSection from '../Section/ServiceSection';
-import ProjectSection from '../Section/ProjectSection';
 import FeedbackSection from '../Section/FeedbackSection';
 import TeamSection from '../Section/TeamSection';
 import HireTrainerSection from '../Section/HireTrainerSection';
