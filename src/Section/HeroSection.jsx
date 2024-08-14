@@ -6,6 +6,7 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/esm/Button';
 import hero from '../Images/banner-image.png'
 import { Container } from "react-bootstrap";
+import { Link } from 'react-router-dom';
 
 function HeroSection() {
   return (
@@ -25,8 +26,11 @@ function HeroSection() {
               Our exceptional development expertise transforms possibilities into realities, crafting Excellence solutions that redefine industries and propel progress to new heights.
             </p>
 
-            <Button className='Quote-Button py-sm-3 px-sm-5 slideInLeft animated' variant="outline-light">Free Quote</Button>{' '}
-            <Button className='Contact-Button py-sm-3 px-sm-5 slideInRight animated' variant="outline-light">Contact Us</Button>{' '}
+            <Link to="/contact"  ><Button className='Quote-Button py-sm-3 px-sm-5 slideInLeft animated' variant="outline-light">
+              Free Quote</Button>{' '}</Link>
+            <Link to="/contact"  ><Button className='Contact-Button py-sm-3 px-sm-5 slideInRight animated' variant="outline-light">
+              Contact Us
+            </Button>{' '}</Link>
           </Col>
           <Col className='img-col text-center text-lg-start'><img src={hero} alt="" className='Hero-img img-fluid' /></Col>
         </Row>

@@ -28,8 +28,8 @@ function FooterSection() {
                 <Row className="g-5 footer-row">
                     <Col lg={3} xs={12}>
                         <h5 className="mb-4 GIn-heading">Get In Touch</h5>
-                        <p className="p-tag mb-3"> <FaLocationDot className="GIn-icon me-2" />287/3, Standard Towers,<br />Avinashi Main Road, Peelamedu, Coimbatore - 641 004</p>
-                        <p className="p-tag mb-3"> <FaPhone className="GIn-icon me-2" />+91 90 43 49 49 41</p>
+                        <p className="p-tag mb-3"> <FaLocationDot className="GIn-icon me-2" />287/3, Standard Towers,<br />Avinashi Main Road, Peelamedu, ,<br />Coimbatore - 641 004</p>
+                        <p className="p-tag mb-3"> <FaPhone className="GIn-icon me-2" />+91- 98 40 64 26 67</p>
                         <p className="p-tag mb-4"> <IoIosMail className="GIn-icon me-2" />contact@emergewiz.com</p>
                         <div className='icon-div pt-2 d-flex'>
                            <button className='GIn-socialM-icon me-3'><FaFacebookF /></button>

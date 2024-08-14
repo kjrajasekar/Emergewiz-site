@@ -45,7 +45,7 @@ function ContactSection() {
                                 <h3>Phone</h3>
                                 <FaPhone />
                                 <span className="m-3"  >
-                                    +91-9043494941
+                                    +91- 98 40 64 26 67
                                 </span>
                             </div>
                             <div className="container text-start my-3">
