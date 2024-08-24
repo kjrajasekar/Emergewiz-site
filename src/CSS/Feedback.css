@@ -93,9 +93,10 @@
   }
 }
 
+
 .prof {
   text-overflow: ellipsis;
-  overflow: visible;
+  overflow: hidden;
   width: 70%;
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -208,4 +209,8 @@
   .product-section .mybtn {
     width: 45% !important;
   }
+ .products .hire-item .row {
+ width: 90%;
+ }
+      
 }

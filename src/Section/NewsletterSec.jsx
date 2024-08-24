@@ -2,8 +2,8 @@ import React from 'react';
 import '../CSS/Newsletter.css'
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Form from 'react-bootstrap/Form';
 import { Container } from "react-bootstrap";
+import Form from 'react-bootstrap/Form';
 import { FaPaperPlane } from "react-icons/fa";
 import newsletter from '../Images/newsletter.png';
 

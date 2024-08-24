@@ -107,7 +107,7 @@
 }
 
 .T-socialM-icon{
-  
+  text-align: center;
     transition: .5s !important;
     color: #1863c9  !important;
     border: thin solid #1863c9 !important;

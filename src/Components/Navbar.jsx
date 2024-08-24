@@ -1,5 +1,5 @@
-import '../CSS/Navbar.css';
 import '../CSS/Sticky-nav.css';
+import '../CSS/Navbar.css';
 import AboutPage from '../Pages/AboutPage';
 import HomePage from '../Pages/HomePage';
 import ServicePage from '../Pages/ServicePage';
@@ -9,9 +9,10 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import React, { useState, useEffect } from 'react';
-import { Route, Routes, Link } from 'react-router-dom';
+import { Route, Routes, Link, useLocation } from 'react-router-dom';
 import logo from './../Images/logo.png'
 import ContactPage from '../Pages/ContactPage';
+import { NavDropdown } from 'react-bootstrap';
 
 function Navibar() {
   const [stickyClass, setStickyClass] = useState('');
@@ -28,15 +29,15 @@ function Navibar() {
     }
   };
 
-  // const [showDropdown, setShowDropdown] = useState(false);
-  // const handleMouseEnter = () => {
-  //   setShowDropdown(true);
-  // };
+  const [showDropdown, setShowDropdown] = useState(false);
+  const handleMouseEnter = () => {
+    setShowDropdown(true);
+  };
 
-  // const handleMouseLeave = () => {
-  //   setShowDropdown(false);
-  // };
-
+  const handleMouseLeave = () => {
+    setShowDropdown(false);
+  };
+  const pathname = useLocation().pathname
   return (
     <Container fluid="xxl" className='position-relative p-0'>
       {['lg'].map((expand) => (
@@ -55,19 +56,20 @@ function Navibar() {
               </Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body className='navBody '>
-              <Nav className="justify-content-end flex-grow-1 nav py-0">
-                <Nav.Link as={Link} to="/" className='navLinks navLink1 mx-4'>Home</Nav.Link>
-                <Nav.Link as={Link} to="/about" className='navLinks navLink2 mx-4 '>About</Nav.Link>
-                <Nav.Link as={Link} to="/service" className='navLinks navLink3 mx-4'>Service</Nav.Link>
-                <Nav.Link as={Link} to="/project" className='navLinks navLink4 mx-4'>Products</Nav.Link>
-                <Nav.Link as={Link} to="/career" className='navLinks navLink4 mx-4'>Career</Nav.Link>
-                {/* <NavDropdown title="Pages" className='navLinks' id={`offcanvasNavbarDropdown-expand-${expand}`}show={showDropdown} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-                  <NavDropdown.Item as={Link} to="/" className='drop-link mb-1'>Page 1</NavDropdown.Item>
-                  <NavDropdown.Item as={Link} to="/" className='drop-link mb-1'>Page 2</NavDropdown.Item>
-                  <NavDropdown.Item as={Link} to="/" className='drop-link mb-1'>Page 3</NavDropdown.Item>
-                  <NavDropdown.Item as={Link} to="/" className='drop-link mb-1'>Page 4</NavDropdown.Item>
-                </NavDropdown> */}
-                <Nav.Link as={Link} to="/contact" className='navLinks navLink5 mx-4'>Contact</Nav.Link>
+              <Nav activeKey={pathname} className="justify-content-end flex-grow-1 nav py-0">
+                <Nav.Link   as={Link} to="/" className={`${pathname=== '/' ? "navLinks navLink1 mx-4 myactive" : "navLinks navLink1 mx-4 "}`}>Home</Nav.Link>
+                <Nav.Link    as={Link} to="/about" className={`${pathname === '/about' ? "navLinks navLink1 mx-4 myactive" : "navLinks navLink1 mx-4 "}`}>About</Nav.Link>
+                {/* <Nav.Link as={Link} to="/service" className='navLinks navLink3 mx-4'>Service</Nav.Link> */}
+               <NavDropdown title="Services" className={`${pathname.startsWith('/service') ? "navLinks navLink1 mx-4 myactive" : "navLinks navLink1 mx-4 "}`} id={`offcanvasNavbarDropdown-expand-${expand}`} show={showDropdown} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+                  <NavDropdown.Item as={Link} to="/service/web" className='drop-link mb-1'>Web Development</NavDropdown.Item>
+                  <NavDropdown.Item as={Link} to="/service/mobile" className='drop-link mb-1'>Mobile Development</NavDropdown.Item>
+                  <NavDropdown.Item as={Link} to="/service/testing" className='drop-link mb-1'>Testing</NavDropdown.Item>
+                  <NavDropdown.Item as={Link} to="/service/digital" className='drop-link mb-1'>Digital Marketing</NavDropdown.Item>
+                </NavDropdown> 
+                <Nav.Link as={Link} to="/project" className={`${pathname.startsWith('/project') ? "navLinks navLink1 mx-4 myactive" : "navLinks navLink1 mx-4 "}`}>Products</Nav.Link>
+                <Nav.Link as={Link} to="/career" className={`${pathname.startsWith('/career') ? "navLinks navLink1 mx-4 myactive" : "navLinks navLink1 mx-4 "}`}>Career</Nav.Link>
+                
+                <Nav.Link as={Link} to="/contact" className={`${pathname.startsWith('/contact') ? "navLinks navLink1 mx-4 myactive" : "navLinks navLink1 mx-4 "}`}>Contact</Nav.Link>
               </Nav>
               {/* <SearchForm/> */}
             </Offcanvas.Body> 
@@ -77,7 +79,12 @@ function Navibar() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
-        <Route path="/service" element={<ServicePage />} />
+        <Route path="/service" element={<ServicePage />} >
+        <Route path="/service/web" element={<ServicePage />} />
+        <Route path="/service/mobile" element={<ServicePage />} />
+        <Route path="/service/testing" element={<ServicePage />} />
+        <Route path="/service/digital" element={<ServicePage />} />
+</Route>
         <Route path="/project" element={<ProjectPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="*" element={<ContactPage />} />

@@ -22,7 +22,7 @@
 }
 
 .sticky-nav .navbar-nav .nav-link {
-    color: black !important;
+    color: black ;
     padding-top: 25px;
     padding-bottom: 25px !important;
 }
@@ -30,6 +30,7 @@
 .sticky-nav .navbar-nav .nav-link:hover{
     color: #1863c9 !important;
 }
+
 
 .sticky-nav .navbar-nav .nav-link::before{
     background-color: #1863c9 !important;

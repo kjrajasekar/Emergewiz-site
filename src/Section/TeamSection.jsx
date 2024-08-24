@@ -19,7 +19,7 @@ function TeamSection() {
                             Emergewiz, Leading the way in digital transformation, leverages advanced technology stacks to provide groundbreaking and next-generation digital solutions.
                         </p>
                     </div>
-                    <Row className="gx-5  ">
+                    <Row className="gx-5 equal-cols  ">
                         <Col xs={12} lg={6} className='  '>
                             <div className="hire-item   ">
                                 <div>
@@ -51,7 +51,7 @@ function TeamSection() {
                             </div>
                         </Col>
                     </Row>
-                    <Row>
+                    <Row className="equal-cols">
                         <Col xs={12} lg={6} className=' '>
                             <div className="hire-item  ">
                                 <div>

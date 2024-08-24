@@ -16,7 +16,7 @@ function ProductSection() {
                     </p>
                 </div>
 
-                <Row className="product-section gx-5">
+                <Row className="product-section gx-5 equal-cols">
                     <Col xs={12} lg={6} className=' '>
                         <div className="hire-item ">
                             <div className=" text-center">
@@ -36,10 +36,10 @@ function ProductSection() {
                         <div className="hire-item  ">
                         <div className=" text-center">
                                 <img src={logistics} alt="smartstorez" className="w-75" />
-                                <h4 className='text-center'>Logistics</h4>
+                                <h4 className='text-center'>Food Duke</h4>
                                 <p className="m-3" >
-                                    Logistics services designed to optimize your supply chain and streamline operations. Our offerings include secure warehousing solutions for efficient inventory management, real-time tracking of stock levels, and timely order fulfillment services. We ensure reliable transportation options and handle customs clearance seamlessly, facilitating smooth import and export processes.</p>
-                                    
+                                Food Duke offers a robust food ordering app designed for convenience and variety. Key features include restaurant listings, menu browsing, order tracking, secure payments, and user reviews. Our platform ensures a smooth ordering experience with quick delivery and real-time updates, making dining out easier from the comfort of your home.
+                                </p> 
                                     </div>
                             <div class="row  justify-content-center ">
                                     <span > Get a Quote <FaArrowRight /> </span>

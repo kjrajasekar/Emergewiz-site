@@ -18,14 +18,14 @@ function ServiceSection() {
                     </p>
                 </div>
 
-                <Row className='g-4'>
+                <Row className='g-4 equal-cols'>
 
                     <Col lg={4} md={6} className=' animated wow zoomIn SEO-Optimization' data-wow-delay="0.3s">
                         <Card className='service-item '>
                             <Card.Body className='card-body'>
                                 <div className='service-img'><FaHome className='service-icon' /></div>
                                 <Card.Title className='mb-3'>Web Development </Card.Title>
-                                <Card.Text>
+                                <Card.Text  >
                                     Accelerate Your Business Transformation with Our Comprehensive Web Development Services.
                                 </Card.Text>
                                 <Button className='rad-mor  '>Read More</Button>
@@ -39,7 +39,7 @@ function ServiceSection() {
                                     <FaHome className='service-icon' />
                                 </div>
                                 <Card.Title className='mb-3'>Mobile App development</Card.Title>
-                                <Card.Text>
+                                <Card.Text  >
                                     Developing high-performance  apps tailored to your business needs, drive user engagement and foster connections with customers.
                                 </Card.Text>
                                 <Button className='rad-mor '>Read More</Button>
@@ -51,7 +51,7 @@ function ServiceSection() {
                             <Card.Body className='card-body'>
                                 <div className='service-img'><FaHome className='service-icon' /></div>
                                 <Card.Title className='mb-3'>UI/UX designing</Card.Title>
-                                <Card.Text>
+                                <Card.Text  >
                                     We have a team of skilled designers who design intuitive interfaces that elevate user experiences and deliver outstanding results.
                                 </Card.Text>
                                 <Button className='rad-mor '>Read More</Button>
@@ -63,7 +63,7 @@ function ServiceSection() {
                             <Card.Body className='card-body'>
                                 <div className='service-img'><FaHome className='service-icon' /></div>
                                 <Card.Title className='mb-3'>Software Testing</Card.Title>
-                                <Card.Text>
+                                <Card.Text >
                                     Our team of experts excels in testing, meticulously identifying & resolving potential issues to ensure robust, reliable applications
                                 </Card.Text>
                                 <Button className='rad-mor '>Read More</Button>
