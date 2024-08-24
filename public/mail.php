@@ -14,13 +14,13 @@ if(!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQU
     # Form Data
     $form_json = json_decode($_POST['data'], true);
 	# The Name
-	$user_name = $form_json['fname'];
+	$user_name = $form_json['name'];
 	# The Email
 	$user_email = $form_json['email'];
 	# The Phone
 	$user_phone = $form_json['phone'];
 	# The Phone
-	$user_company = $form_json['cname'];
+	// $user_company = $form_json['cname'];
 	# The Message
 	$user_message = $form_json['message'];
 	
