@@ -12,7 +12,9 @@ function ContactSection() {
     const onFormSubmit = data => {
         axios.post("./mail.php", data)
             .then((response) => {
-                alert("Message sent Successfully..")
+                console.log(response);
+                
+                // alert("Message sent Successfully..")
                 resetting()
             })
             .catch((e) => {
