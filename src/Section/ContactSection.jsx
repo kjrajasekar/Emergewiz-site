@@ -14,7 +14,7 @@ function ContactSection() {
             .then((response) => {
                 console.log(response);
                 
-                // alert("Message sent Successfully..")
+                alert("Message sent Successfully..")
                 resetting()
             })
             .catch((e) => {
