@@ -114,7 +114,7 @@ function AboutPage() {
 
         </Row>
         {/* <div> */}
-        <h2 className='Service-sub-title mt-5'>What We Do</h2>
+        <h2 className='Service-sub-title mt-5'>Why Choose Us ?</h2>
           <p className='mx-5 lh-base'>
           Choosing EmergeWiz means choosing a partner who truly understands your business needs. We combine our expertise with a commitment to delivering solutions that work for you. Our team is passionate about driving your success, offering clear communication, reliable service, and results you can count on. 
            </p>

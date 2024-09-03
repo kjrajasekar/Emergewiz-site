@@ -1,7 +1,9 @@
 .service-count h1,h2{
     color: #1863c9;
 }
-
+.career .service-item:hover p{
+    color: white;
+}
 .service-div{
     /* border:  thin solid red; */
     background-color: white;

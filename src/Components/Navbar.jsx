@@ -13,9 +13,16 @@ import { Route, Routes, Link, useLocation } from 'react-router-dom';
 import logo from './../Images/logo.png'
 import ContactPage from '../Pages/ContactPage';
 import { NavDropdown } from 'react-bootstrap';
+import CareerPage from '../Pages/CareerPage';
 
 function Navibar() {
   const [stickyClass, setStickyClass] = useState('');
+  // State to control the visibility of the Offcanvas
+  const [showOffcanvas, setShowOffcanvas] = useState(false);
+
+  // Functions to handle opening and closing the Offcanvas
+  const handleClose = () => setShowOffcanvas(false);
+  const handleShow = () => setShowOffcanvas(true);
 
   useEffect(() => {
     window.addEventListener('load', stickNavbar);
@@ -48,17 +55,18 @@ function Navibar() {
               <img src={logo} alt="emergewiz-logo" width={200} />
             </Link>
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
-          <Navbar.Offcanvas id={`offcanvasNavbar-expand-${expand}`} aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`} placement="end">
+          <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} onClick={handleShow}/>
+          <Navbar.Offcanvas  show={showOffcanvas}
+                        onHide={handleClose}  id={`offcanvasNavbar-expand-${expand}`} aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`} placement="end">
             <Offcanvas.Header closeButton>
               <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
                 Menu
               </Offcanvas.Title>
             </Offcanvas.Header>
-            <Offcanvas.Body className='navBody '>
+            <Offcanvas.Body className='navBody ' >
               <Nav activeKey={pathname} className="justify-content-end flex-grow-1 nav py-0">
-                <Nav.Link   as={Link} to="/" className={`${pathname=== '/' ? "navLinks navLink1 mx-4 myactive" : "navLinks navLink1 mx-4 "}`}>Home</Nav.Link>
-                <Nav.Link    as={Link} to="/about" className={`${pathname === '/about' ? "navLinks navLink1 mx-4 myactive" : "navLinks navLink1 mx-4 "}`}>About</Nav.Link>
+                <Nav.Link onClick={handleClose}  as={Link} to="/" className={`${pathname=== '/' ? "navLinks navLink1 mx-4 myactive" : "navLinks navLink1 mx-4 "}`}>Home</Nav.Link>
+                <Nav.Link onClick={handleClose}   as={Link} to="/about" className={`${pathname === '/about' ? "navLinks navLink1 mx-4 myactive" : "navLinks navLink1 mx-4 "}`}>About</Nav.Link>
                 {/* <Nav.Link as={Link} to="/service" className='navLinks navLink3 mx-4'>Service</Nav.Link> */}
                <NavDropdown title="Services" className={`${pathname.startsWith('/service') ? "navLinks navLink1 mx-4 myactive" : "navLinks navLink1 mx-4 "}`} id={`offcanvasNavbarDropdown-expand-${expand}`} show={showDropdown} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
                   <NavDropdown.Item as={Link} to="/service/web" className='drop-link mb-1'>Web Development</NavDropdown.Item>
@@ -66,12 +74,12 @@ function Navibar() {
                   <NavDropdown.Item as={Link} to="/service/testing" className='drop-link mb-1'>Testing</NavDropdown.Item>
                   <NavDropdown.Item as={Link} to="/service/digital" className='drop-link mb-1'>Digital Marketing</NavDropdown.Item>
                 </NavDropdown> 
-                <Nav.Link as={Link} to="/project" className={`${pathname.startsWith('/project') ? "navLinks navLink1 mx-4 myactive" : "navLinks navLink1 mx-4 "}`}>Products</Nav.Link>
-                <Nav.Link as={Link} to="/career" className={`${pathname.startsWith('/career') ? "navLinks navLink1 mx-4 myactive" : "navLinks navLink1 mx-4 "}`}>Career</Nav.Link>
+                <Nav.Link onClick={handleClose} as={Link} to="/project" className={`${pathname.startsWith('/project') ? "navLinks navLink1 mx-4 myactive" : "navLinks navLink1 mx-4 "}`}>Products</Nav.Link>
+                <Nav.Link onClick={handleClose} as={Link} to="/career" className={`${pathname.startsWith('/career') ? "navLinks navLink1 mx-4 myactive" : "navLinks navLink1 mx-4 "}`}>Career</Nav.Link>
                 
-                <Nav.Link as={Link} to="/contact" className={`${pathname.startsWith('/contact') ? "navLinks navLink1 mx-4 myactive" : "navLinks navLink1 mx-4 "}`}>Contact</Nav.Link>
+                <Nav.Link onClick={handleClose} as={Link} to="/contact" className={`${pathname.startsWith('/contact') ? "navLinks navLink1 mx-4 myactive" : "navLinks navLink1 mx-4 "}`}>Contact</Nav.Link>
               </Nav>
-              {/* <SearchForm/> */}
+
             </Offcanvas.Body> 
           </Navbar.Offcanvas>
         </Navbar>
@@ -86,6 +94,7 @@ function Navibar() {
         <Route path="/service/digital" element={<ServicePage />} />
 </Route>
         <Route path="/project" element={<ProjectPage />} />
+        <Route path="/career" element={<CareerPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="*" element={<ContactPage />} />
       </Routes>
