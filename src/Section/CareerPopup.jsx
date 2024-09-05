@@ -14,6 +14,7 @@ function CareerPopup(props) {
     formState: { errors },
   } = useForm();
   const onFormSubmit = (data) => {
+    console.log(data)
     axios
       .post("./mail.php", data)
       .then((response) => {
@@ -80,7 +81,29 @@ function CareerPopup(props) {
               {" "}
               {errors?.email && errors.email.message}
             </span>
-            <input type="file" name="resume" id="resume" />
+            <input
+              name="phone"
+              placeholder="Enter phone number..."
+              type="phone"
+              {...register("phone", {
+                required: "phone is required",
+                pattern: {
+                  value: /^[0-9]{10}$/,
+                  message: "Enter valid phone number",
+                },
+              })}
+            />
+            <span style={{ color: "red" }}>
+              {" "}
+              {errors?.phone && errors.phone.message}
+            </span>
+
+            <input type="file"   name="resume" accept="application/pdf,application/msword"   {...register("resume", {
+            validate: {
+              lessThan10MB: (files) => files[0]?.size < 300000 || "Max 300kb"
+            }
+          })} />
+           {errors.resume && <span>{errors.resume.message}</span>}
             <button
               type="submit"
               id="formButton"
