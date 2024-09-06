@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { Container } from "react-bootstrap";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -6,6 +7,13 @@ import '../CSS/ProjectPage.css'
 import ProductSection from '../Section/ProductSection';
 
 function ProjectPage() {
+    const { pathname } = useLocation();
+
+    // autoscroll to top
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [pathname]);
+
     return(
         <div className="bg-white">
 

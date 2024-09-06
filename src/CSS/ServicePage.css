@@ -17,3 +17,9 @@
     color: white !important;
     margin-top: 10px;
 }
+
+.myweb .service-item .card-text{
+    overflow: visible !important;
+    text-align: left;
+    -webkit-line-clamp: unset;
+}

@@ -39,5 +39,18 @@
   }
 
 
+  .mycard{
+    background-color: white;
+    border: 0.5px grey solid;
+    padding: 15px;
+    
+    /* color: rgb(61, 59, 59); */
+    box-shadow: 5px 5px;
+    transition:box-shadow 0.3s ease-in-out;
+  }
+  .mycard:hover{
+    box-shadow: 10px 10px;
+  }
+
 
 

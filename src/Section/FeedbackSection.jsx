@@ -10,15 +10,15 @@ const testimonials = [
     {
         id: 1,
         content: 'EmergeWiz has completely transformed our business operations. Their innovative tools have streamlined our processes, saving us both time and money. The customer service is outstanding, and we couldnt be happier with the results.',
-        author: 'Client Name',
-        profession: 'Profession',
+        author: 'Josephine Mary',
+        profession: 'Team Director',
         path: './assets/team-2.jpg'
     },
     {
         id: 2,
         content: 'The software development team we worked with understood our unique needs and delivered a custom solution that exceeded our expectations. Their meticulous attention to detail and commitment to ensuring customer satisfaction distinguishes them from others. Im grateful for their expertise in helping us achieve our sales goals',
-        author: 'Client Name',
-        profession: 'Profession',
+        author: 'David Kelvin',
+        profession: 'Development Executive',
         path: './assets/team-1.jpg'
     },
     {
@@ -30,7 +30,7 @@ const testimonials = [
     },
     {
         id: 4,
-        content: 'ssss I approached EmergeWiz to help me bring my app idea to life, and Im so glad I did.Their team of designers listened to my vision and translated it into a sleek and user- friendly interface that exceeded my expectations.The apps design has received rave reviews from users, and I credit that to the expertise and creativity of EmergeWiz.',
+        content: ' I approached EmergeWiz to help me bring my app idea to life, and Im so glad I did.Their team of designers listened to my vision and translated it into a sleek and user- friendly interface that exceeded my expectations.The apps design has received rave reviews from users, and I credit that to the expertise and creativity of EmergeWiz.',
         author: 'Client Name',
         profession: 'Profession',
         path: './assets/team-1.jpg'
@@ -51,7 +51,7 @@ const TestimonialCarousel = () => {
                             < Row className='justify-content-md-center' >
                                 <Col xs={12} lg={5} className='position-relative' >
                                     <div className="testimonial-item" style={{ background: "#0aac47" }}>
-                                        <img src={testimonial.path} className='img-fluid client_img' alt="testimonial-img" />
+                                        <img src={"../"+testimonial.path} className='img-fluid client_img' alt="testimonial-img" />
                                     </div>
                                 </Col>
                                 <Col xs={12} lg={5}>

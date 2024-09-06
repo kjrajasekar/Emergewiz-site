@@ -1,9 +1,7 @@
 import React from "react";
-import { Row,Container, Col } from "react-bootstrap";
 import "../CSS/Service.css";
 import "../CSS/popup.css";
 import { useForm } from "react-hook-form";
-import { Link } from "react-router-dom";
 import axios from "axios";
 
 function CareerPopup(props) {
@@ -14,7 +12,7 @@ function CareerPopup(props) {
     formState: { errors },
   } = useForm();
   const onFormSubmit = (data) => {
-    console.log(data)
+    console.log(data);
     axios
       .post("./mail.php", data)
       .then((response) => {
@@ -98,12 +96,18 @@ function CareerPopup(props) {
               {errors?.phone && errors.phone.message}
             </span>
 
-            <input type="file"   name="resume" accept="application/pdf,application/msword"   {...register("resume", {
-            validate: {
-              lessThan10MB: (files) => files[0]?.size < 300000 || "Max 300kb"
-            }
-          })} />
-           {errors.resume && <span>{errors.resume.message}</span>}
+            <input
+              type="file"
+              name="resume"
+              accept="application/pdf,application/msword"
+              {...register("resume", {
+                validate: {
+                  lessThan10MB: (files) =>
+                    files[0]?.size < 300000 || "Max 300kb",
+                },
+              })}
+            />
+            {errors.resume && <span>{errors.resume.message}</span>}
             <button
               type="submit"
               id="formButton"

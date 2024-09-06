@@ -1,12 +1,20 @@
 import React, { useEffect, useState } from "react";
-import { Container } from "react-bootstrap";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import { useLocation } from "react-router-dom";
+import { Container,Row,Col } from "react-bootstrap";
 // import '../CSS/ProjectPage.css'
-import ContactSection from "../Section/ContactSection";
 import CareerSection from "../Section/CareerSection";
+import Myhelmet from "./Myhelmet";
 
 function CareerPage() {
+
+  const { pathname } = useLocation();
+
+  // autoscroll to top
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+
   const [data, setdata] = useState([]);
   useEffect(() => {
     fetch("http://127.0.0.1:8000/api/job_openings/")
@@ -14,14 +22,18 @@ function CareerPage() {
       .then((data) => setdata(data))
       .catch((error) => console.error("Error fetching data:", error));
   }, []);
-  console.log(data);
 
+  let metas={
+    title : "Best Web Development Company in Coimbatore",
+describe: "Looking for the best web development company in Coimbatore? We deliver innovative, custom web solutions with a focus on quality and client satisfaction."
+  }
   return (
     <div className="bg-white">
+      <Myhelmet mymeta={metas}/>
       <Container fluid="xxl" className="projectPage_div py-5 mb-5">
         <Container className="my-5 py-5 px-lg-5">
           <Row className="g-5 py-5">
-            <Col className="text-center">
+            <Col className="text-center" >
               <h1 className="text-white animated zoomIn project-page-heading">
                 Career Page{" "}
               </h1>
@@ -32,7 +44,7 @@ function CareerPage() {
       </Container>
       <Container fluid="xxl" className="service-div py-5 wow fadeInUp">
         <Container className="px-lg-5">
-          <Row className="g-4 equal-cols">
+          <Row className="g-4 equal-cols" >
             {data ? (
               data.map((job) => {
                 if (job.status) return <CareerSection jobs={job} />;
