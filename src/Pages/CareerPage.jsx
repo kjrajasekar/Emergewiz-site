@@ -17,7 +17,7 @@ function CareerPage() {
 
   const [data, setdata] = useState([]);
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/api/job_openings/")
+    fetch("http://admin.emergewiz.com/api/job_openings/")
       .then((response) => response.json())
       .then((data) => setdata(data))
       .catch((error) => console.error("Error fetching data:", error));

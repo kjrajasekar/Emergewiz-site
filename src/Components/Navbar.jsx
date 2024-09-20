@@ -16,6 +16,7 @@ import { NavDropdown } from "react-bootstrap";
 import CareerPage from "../Pages/CareerPage";
 import Services from "../Section/WebServices";
 import WebServices from "../Section/WebServices";
+import MobileService from "../Section/MobileServices";
 
 function Navibar() {
   const [stickyClass, setStickyClass] = useState("");
@@ -198,7 +199,7 @@ function Navibar() {
           {" "}
         </Route>
         <Route path="/service/web" element={<WebServices />} />
-        <Route path="/service/mobile" element={<ServicePage />} />
+        <Route path="/service/mobile" element={<MobileService />} />
         <Route path="/service/testing" element={<ServicePage />} />
         <Route path="/service/digital" element={<ServicePage />} />
 

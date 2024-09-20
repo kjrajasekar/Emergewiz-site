@@ -6,12 +6,14 @@ import "../CSS/ServicePage.css";
 import { FaPaperPlane } from "react-icons/fa";
 import Form from "react-bootstrap/Form";
 import HeroSection from "./HeroSection";
-import newsletter from "../Images/newsletter.png";
 import TeamSection from "./TeamSection";
 import TestimonialCarousel from "./FeedbackSection";
 import AccordionSection from "./AccordionSection";
+import Myhelmet from "../Pages/Myhelmet";
+import Newsletter from "./NewsletterSec";
 
-function WebServices() {
+
+function MobileService() {
   const { pathname } = useLocation();
 
   // autoscroll to top
@@ -19,162 +21,130 @@ function WebServices() {
     window.scrollTo(0, 0);
   }, [pathname]);
 
-  let accord=[
+  let accord = [
     {
-      question:"What services does EmergeWiz offer?",
-      answer:"EmergeWiz offers internet marketing, e-commerce solutions, custom website design and development, and mobile website design."
+      question: "What mobile app development services does EmergeWiz offer?",
+      answer:
+        "EmergeWiz offers native mobile app development, cross-platform app development, custom mobile app development, enterprise mobile solutions, and app maintenance and support.",
     },
-  {question:"Why should I choose EmergeWiz for web development in Coimbatore?",
-  answer:"EmergeWiz is known for its expertise, experience, innovative designs, responsive development, and affordable quality services."
-  },
-  { question:"How much time is generally required for a website to be developed?",
-  answer:"The timeline varies based on the project's complexity. EmergeWiz works efficiently to deliver projects on time."
-  },
-  {question:"Do you offer website redesign services?",
-  answer:"Yes, EmergeWiz provides website redesign services to update and improve existing websites."
-  },
-  {question:"Do you offer e-commerce website development?",
-    answer:"Yes, EmergeWiz offers comprehensive e-commerce solutions to help businesses sell their products and services online."
-  },
-  ]
+    {
+      question: "Do you provide app maintenance and support?",
+      answer:
+        "Yes, EmergeWiz provides ongoing app maintenance and support, which includes updates, bug fixes, and improvements to ensure optimal performance.",
+    },
+    {
+      question: "What is the process for developing a mobile app at EmergeWiz?",
+      answer:
+        "Discovery and planning, design and prototyping, development and integration, testing and quality assurance, deployment and launch, and support and maintenance ongoing are included in the process.",
+    },
+    {
+      question: "How are app updates and new features managed?",
+      answer:
+        "EmergeWiz provides ongoing support for app updates, incorporating new features, and making necessary amendments to keep the app current.",
+    },
+    {
+      question: "What is the cost of developing a mobile app with EmergeWiz?",
+      answer:
+        "The cost depends on the app’s complexity and features. EmergeWiz provides competitive pricing and detailed quotes based on project requirements.",
+    },
+  ];
+  let metas = {
+    title: " Best Mobile App Development Company in Coimbatore",
+    describe:
+      "EmergeWiz, a trusted mobile app development company in Coimbatore. We build high-performance, bespoke mobile applications that align with your business goals.",
+  };
   return (
     <div className="bg-white">
-      
-      <HeroSection option="web" />
+      <Myhelmet mymeta={metas} />
+      <HeroSection option="mobile" />
       <Container fluid="xxl" className="service-div pb-5 wow fadeInUp">
         <Container className="px-lg-5 ">
           <div className="S-section-title position-relative text-center mb-3 pb-2 wow fadeInUp">
             <h2 className="Service-sub-title mt-5">
-              Web development company in Coimbatore
+              Mobile App Development Company in Coimbatore
             </h2>
             <p className="mx-5 lh-base text-start mt-4">
-              EmergeWiz is a top <b>web development company in Coimbatore,</b>{" "}
-              offering exceptional web development solutions designed to elevate
-              your business. Our services include custom website design and
-              development, e-commerce solutions, mobile website design, and
-              internet marketing. Having implemented all of the latest
-              technologies we are confident that your website will have great
-              usability. We employ some of the most experienced and professional
-              designers and developers who offer attractive, well-structured,
-              and optimized web pages in line with the client’s requirements and
-              financial capacity. At EmergeWiz, we work on the development of
-              responsive, informative, and conversion-focused websites for
-              affordable prices.
+              EmergeWiz is the best{" "}
+              <b>mobile app development company in Coimbatore,</b> dedicated to
+              creative app development for your business. Our main focus is to
+              develop unique and qualitative mobile applications to meet the
+              strategic needs of organizations in today’s competitive market.
+              You deal with us on your specific business requirements and we use
+              them to develop and deliver mobile applications that are not only
+              functional, and scalable but also captivating to enable you to
+              achieve a comprehensive digital transformation.
             </p>
             <p className="mx-5 lh-base text-start">
-              We have a team of highly skilled and experienced{" "}
-              <b>Web designers and developers in Coimbatore</b> Who are
-              dedicated to delivering exceptional results. They are committed to
-              delivering aesthetically pleasing, easy-to-navigate, and search
-              engine-friendly Web pages that fit your needs and wallet. At
-              EmergeWiz, it is our business to create appealing, informative,
-              and, more significantly, conversion-oriented websites for your
-              enterprise.
+              At EmergeWiz, we have understood that an application is not just a
+              utility but a unique business enabler that can revolutionize your
+              company processes and customer interactions. That’s why our
+              approach to application development is both comprehensive and
+              client-focused. That's why we are communicating with you, finding
+              out all the goals, issues, and opportunities, so each developed
+              application is a perfect fit for your business.
             </p>
 
             <h2 className="Service-sub-title mt-5">
-              Our Key Features of Web Designing Services in Coimbatore
+              Our Mobile App Development Services in Coimbatore
             </h2>
+
             <Row>
               <Col xs={12} md={6}>
                 <p className="mycard mx-3 lh-base text-start mt-3">
-                  <b>Customized Solutions: </b>EmergeWiz is a well-established{" "}
-                  <b>web development company in Coimbatore</b> and we are ready
-                  to offer you web solutions according to your business
-                  requirements. We work on the principles of exclusivity to
-                  guarantee that every undertaking matches your particular
-                  specifications as well as goals for your company brand.
+                  <b>Native Mobile App Development:</b>We develop effective
+                  native applications for iPhone and iPad as well as for
+                  Android-based devices. We have experienced professionals using
+                  relevant platform languages and tools like swift, Kotlin, Java
+                  for building the top-notch performance and user-friendly apps.
                 </p>
               </Col>
               <Col xs={12} md={6}>
                 <p className="mycard mx-3 lh-base text-start mt-3">
-                  <b>Innovative Design:</b> EmergeWiz is tackling the provision
-                  of stunning and distinctive web designs that can help
-                  differentiate the brand of your business. We combine
-                  creativity with the purposes to make sure our design vision is
-                  both aesthetically pleasing and effective in meeting your
-                  company’s goals as well as improving customers’ experience.
+                  <b>Cross-Platform App Development:</b> Here, for the
+                  organizations who are interested in having presence in
+                  multiple platforms, we provide cross platform app development
+                  which involves frameworks such as Flutter and React Native.
+                  From this approach, one benefits from a consistent look, which
+                  practically cuts down on development time and money.
                 </p>
               </Col>
             </Row>
             <Row>
               <Col xs={12} md={6}>
                 <p className="mycard mx-3 lh-base text-start mt-3">
-                  <b>Responsive Development:</b> We guarantee that all sites
-                  designed at PearliePop are clear and compatible with all sorts
-                  of devices. None of the designs/developments are a
-                  one-size-fits-all proposition and even more so when it comes
-                  to mobile web design/development that targets audiences across
-                  multiple platforms/desktops and devices/OS.
+                  <b>Enterprise Mobile Solutions: </b> We deliver
+                  business-to-employee and business-to-consumer mobility
+                  solutions that drive efficiency, effectiveness and
+                  satisfaction. All of our solutions are customizable, protected
+                  by industry-standard layers of security, and built to
+                  interface with any of your current systems.
                 </p>
               </Col>
               <Col xs={12} md={6}>
                 <p className="mycard mx-3 lh-base text-start mt-3">
-                  <b>Affordable Quality: </b>We specialize in affordable and
-                  professional <b>web design services in Coimbatore</b>. Our
-                  primary concern is to provide the best possible solutions at
-                  an affordable price that gives you great results on your
-                  investment, allowing you to obtain a professional and
-                  efficient web presence.
+                  <b>App Maintenance and Support:</b>
+                  In addition to development, EmergeWiz provides services for
+                  further support and maintenance and provides to your
+                  application all the updates. Updates, bugs fixes, improvements
+                  – new and better versions are regularly released to sustain
+                  the perfect workflow of the app.
                 </p>
               </Col>
             </Row>
           </div>
-
           <div>
-            <Container
-              fluid="xxl"
-              className="Newsletter-div my-3 wow fadeInUp"
-              data-wow-delay="0.1s"
-            >
-              <Container className="inner-div px-lg-5">
-                <Row className="Newsletter-row">
-                  <Col className="  col-lg-6 heading">
-                    <h3>Get Ahead with EmergeWiz</h3>
-                    <p className="sub-title">
-                      We provide creative solutions and effective marketing
-                      strategies designed to keep you ahead of your competitors.
-                      Start Your Project with Us.
-                    </p>
-                    <Form>
-                      <Form.Group controlId="exampleForm.ControlInput1">
-                        <Form.Control
-                          type="email"
-                          placeholder="Enter Your Email"
-                          className="E-mail-bar"
-                        />
-                        <a href="#home">
-                          <FaPaperPlane className="send-icon" />
-                        </a>
-                      </Form.Group>
-                    </Form>
-                  </Col>
-                  <Col className="col-lg-6 text-center mb-n5 d-none d-md-block">
-                    <img
-                      src={newsletter}
-                      alt="newsletter-img"
-                      className="newsletter-img mt-5"
-                    />
-                  </Col>
-                </Row>
-              </Container>
-            </Container>
-
+            <Newsletter />
             <Container fluid="xxl" className="service-div py-5 wow fadeInUp">
               <Container className="px-lg-5">
                 <div className="S-section-title position-relative text-center mb-5 pb-2 wow fadeInUp">
                   <h2 className="Service-sub-title">
-                    Why prefer EmergeWiz for Web designing Services in
-                    Coimbatore?
+                    Why Choose EmergeWiz for Mobile App development?
                   </h2>
                   <p className="mx-5 lh-base">
-                    EmergeWiz is a leading{" "}
-                    <b>web development company in Coimbatore</b>, recognized for
-                    its innovative solutions and commitment to client-centric
-                    service. The team works hard to deliver custom websites that
-                    meet each business's needs. With a focus on quality and
-                    innovation, EmergeWiz stands out in the web development
-                    industry
+                    Choose EmergeWiz for mobile app development. We specialize
+                    in creating high-performance apps for Android, iOS, and
+                    Flutter, delivering clean, user-friendly designs and
+                    ensuring a smooth experience across all platforms.
                   </p>
                 </div>
 
@@ -188,16 +158,15 @@ function WebServices() {
                     <Card className="service-item ">
                       <Card.Body className="card-body">
                         <Card.Title className="mb-3">
-                          Expertise and Experience
+                          Experienced Team of Experts
                         </Card.Title>
                         <Card.Text>
-                          Taking years of experience in the web development
-                          industry, our dedicated professionals ensure high
-                          quality and efficiency in all works. Now it is
-                          possible to state that we have provided various web
-                          development projects throughout the companies’
-                          spectrum starting with simple business sites and
-                          ending with Internet shops.
+                          Our team of talented and proficient developers,
+                          designers, and project managers in our Mobile
+                          Application Development Company Coimbatore has many
+                          years of experience in developing mobile applications
+                          across various industries such as healthcare,
+                          e-commerce, financial, education, and more.
                         </Card.Text>
                       </Card.Body>
                     </Card>
@@ -211,19 +180,16 @@ function WebServices() {
                     <Card className="service-item">
                       <Card.Body className="card-body">
                         <Card.Title className="mb-3">
-                          Customized Solutions
+                          Client-Centric Approach
                         </Card.Title>
                         <Card.Text>
-                          To help you understand better, every business has its
-                          own set goals and objectives on the balance sheets.
-                          Being one of the leading{" "}
-                          <b>web development company in Coimbatore</b>, we offer
-                          tailor-made solutions should you need only a CMS, an
-                          online shop, or a full-fledged website with a fully
-                          responsive design.
-                          {/* Our services
-                          are created based on the needs of the client to suit
-                          the intended purpose. */}
+                          At EmergeWiz, the main focus is always the client, We
+                          are focused on the client's needs, meaning each app to
+                          be created corresponds to your expectations and
+                          generates effective outcomes. Our mobile app
+                          development in Coimbatore is designed to provide you
+                          with the services that you are looking for and much
+                          more.
                         </Card.Text>
                       </Card.Body>
                     </Card>
@@ -237,84 +203,16 @@ function WebServices() {
                     <Card className="service-item">
                       <Card.Body className="card-body">
                         <Card.Title className="mb-3">
-                          User-Centric Design
+                          Focus on Quality and Innovation
                         </Card.Title>
                         <Card.Text>
-                          To us, the creation of a perfect website entails
-                          realizing a great user experience or UX website. Being
-                          one of the leading web design company in Coimbatore,
-                          our design concept focuses on the users appreciating
-                          the elegant look and feel of the site but also
-                          appreciating it in terms of usability and its
-                          multifunctional nature.
-                        </Card.Text>
-                      </Card.Body>
-                    </Card>
-                  </Col>
-                  <Col
-                    lg={4}
-                    md={6}
-                    className=" animated wow zoomIn SEO-Optimization"
-                  >
-                    <Card className="service-item pb-3" data-wow-delay="0.1s">
-                      <Card.Body className="card-body">
-                        <Card.Title className="mb-3">
-                          SEO-Optimized Websites
-                        </Card.Title>
-                        <Card.Text>
-                          We at EmergeWiz ensure that websites that we design
-                          meet the SEO guidelines that a site such as Google
-                          requires. This involves issues such as the absence of
-                          messy codes, short page loading time, the ability of
-                          the site to adapt to mobile devices, and correct
-                          positioning of the keywords among others.
-                        </Card.Text>
-                      </Card.Body>
-                    </Card>
-                  </Col>
-                  <Col
-                    lg={4}
-                    md={6}
-                    className=" animated wow zoomIn SEO-Optimization"
-                    data-wow-delay="0.3s"
-                  >
-                    <Card className="service-item">
-                      <Card.Body className="card-body">
-                        <Card.Title className="mb-3">
-                          Client-Centric Approach
-                        </Card.Title>
-                        <Card.Text>
-                          We believe in maintaining a professional and long-term
-                          partnership with the clients. This is why at
-                          EmergeWiz, we dedicate time to understanding your
-                          business, your goals, and your vision. At each stage
-                          of development, you are kept informed and updated and
-                          your input is encouraged and acknowledged.
-                          {/* We pride
-                          ourselves in ensuring customers are fully satisfied at
-                          all times. */}
-                        </Card.Text>
-                      </Card.Body>
-                    </Card>
-                  </Col>
-                  <Col
-                    lg={4}
-                    md={6}
-                    className="animated wow zoomIn SEO-Optimization"
-                    data-wow-delay="0.6s"
-                  >
-                    <Card className="service-item">
-                      <Card.Body className="card-body">
-                        <Card.Title className="mb-3">
-                          Support and Maintenance
-                        </Card.Title>
-                        <Card.Text>
-                          At EmergeWiz, our commitment doesn’t end with the
-                          website launch. We offer continuous support and
-                          maintenance to keep your website updated, secure, and
-                          running smoothly at all times. Whether it’s technical
-                          updates or troubleshooting, we’re here to assist you
-                          long after the project is completed.
+                          This has always been a primary consideration for DMH
+                          and all that it does. Our goal is to provide
+                          high-quality applications intuitive but also unique
+                          and sustainable. Our team is aware of the ongoing
+                          trends and technologies of Mobile application
+                          development in Coimbatore so that we can offer
+                          innovative solutions
                         </Card.Text>
                       </Card.Body>
                     </Card>
@@ -327,9 +225,11 @@ function WebServices() {
       </Container>
       <TeamSection />
       <TestimonialCarousel />
-      <AccordionSection faq={accord}  />
+      <AccordionSection faq={accord} />
+
+    
     </div>
   );
 }
 
-export default WebServices;
+export default MobileService;

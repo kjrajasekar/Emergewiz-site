@@ -15,6 +15,11 @@ function HeroSection(props) {
       para: "With the Leading Web Design and Development Company in Coimbatore. Let us help you make your dreams a reality with a website that not only meets but exceeds your expectations.",
     },
     {
+      title: "mobile",
+      header: "Innovative Design Meets Expert Development",
+      para: "EmergeWiz is a leading mobile application development company, creating  innovative iOS and Android applications that boost brand presence and drive business growth.",
+    },
+    {
       title: "about",
       header: "Transforming Ideas into Extraordinary Digital Solutions",
       para: "End-to-end software development, from innovative application creation to strategic digital marketing, driving your business forward.",

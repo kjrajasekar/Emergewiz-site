@@ -10,7 +10,7 @@ import axios from "axios";
 function ContactSection() {
     const { register, handleSubmit, resetField, formState: { errors } } = useForm();
     const onFormSubmit = data => {
-        axios.post("./mail.php", data)
+        axios.post("http://admin.emergewiz.com/api/send-contact-email/", data)
             .then((response) => {
                 console.log(response);  
                 alert("Message sent Successfully..")

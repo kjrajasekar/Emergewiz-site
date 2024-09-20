@@ -11,6 +11,7 @@ import TeamSection from "./TeamSection";
 import TestimonialCarousel from "./FeedbackSection";
 import AccordionSection from "./AccordionSection";
 import Myhelmet from "../Pages/Myhelmet";
+import Newsletter from "./NewsletterSec";
 
 function WebServices() {
   const { pathname } = useLocation();
@@ -20,29 +21,41 @@ function WebServices() {
     window.scrollTo(0, 0);
   }, [pathname]);
 
-  let accord=[
+  let accord = [
     {
-      question:"What services does EmergeWiz offer?",
-      answer:"EmergeWiz offers internet marketing, e-commerce solutions, custom website design and development, and mobile website design."
+      question: "What services does EmergeWiz offer?",
+      answer:
+        "EmergeWiz offers internet marketing, e-commerce solutions, custom website design and development, and mobile website design.",
     },
-  {question:"Why should I choose EmergeWiz for web development in Coimbatore?",
-  answer:"EmergeWiz is known for its expertise, experience, innovative designs, responsive development, and affordable quality services."
-  },
-  { question:"How much time is generally required for a website to be developed?",
-  answer:"The timeline varies based on the project's complexity. EmergeWiz works efficiently to deliver projects on time."
-  },
-  {question:"Do you offer website redesign services?",
-  answer:"Yes, EmergeWiz provides website redesign services to update and improve existing websites."
-  },
-  {question:"Do you offer e-commerce website development?",
-    answer:"Yes, EmergeWiz offers comprehensive e-commerce solutions to help businesses sell their products and services online."
-  },
-  ]
+    {
+      question:
+        "Why should I choose EmergeWiz for web development in Coimbatore?",
+      answer:
+        "EmergeWiz is known for its expertise, experience, innovative designs, responsive development, and affordable quality services.",
+    },
+    {
+      question:
+        "How much time is generally required for a website to be developed?",
+      answer:
+        "The timeline varies based on the project's complexity. EmergeWiz works efficiently to deliver projects on time.",
+    },
+    {
+      question: "Do you offer website redesign services?",
+      answer:
+        "Yes, EmergeWiz provides website redesign services to update and improve existing websites.",
+    },
+    {
+      question: "Do you offer e-commerce website development?",
+      answer:
+        "Yes, EmergeWiz offers comprehensive e-commerce solutions to help businesses sell their products and services online.",
+    },
+  ];
 
-  let metas={
-    title : "Best Web Development Company in Coimbatore",
-describe: "We are a leading website design, web development, and digital marketing company based in Coimbatore, offering comprehensive services to enhance your online presence."
-  }
+  let metas = {
+    title: "Best Web Development Company in Coimbatore",
+    describe:
+      "We are a leading website design, web development, and digital marketing company based in Coimbatore, offering comprehensive services to enhance your online presence.",
+  };
   return (
     <div className="bg-white">
       <Myhelmet mymeta={metas} />
@@ -128,44 +141,7 @@ describe: "We are a leading website design, web development, and digital marketi
           </div>
 
           <div>
-            <Container
-              fluid="xxl"
-              className="Newsletter-div my-3 wow fadeInUp"
-              data-wow-delay="0.1s"
-            >
-              <Container className="inner-div px-lg-5">
-                <Row className="Newsletter-row">
-                  <Col className="  col-lg-6 heading">
-                    <h3>Get Ahead with EmergeWiz</h3>
-                    <p className="sub-title">
-                      We provide creative solutions and effective marketing
-                      strategies designed to keep you ahead of your competitors.
-                      Start Your Project with Us.
-                    </p>
-                    <Form>
-                      <Form.Group controlId="exampleForm.ControlInput1">
-                        <Form.Control
-                          type="email"
-                          placeholder="Enter Your Email"
-                          className="E-mail-bar"
-                        />
-                        <a href="#home">
-                          <FaPaperPlane className="send-icon" />
-                        </a>
-                      </Form.Group>
-                    </Form>
-                  </Col>
-                  <Col className="col-lg-6 text-center mb-n5 d-none d-md-block">
-                    <img
-                      src={newsletter}
-                      alt="newsletter-img"
-                      className="newsletter-img mt-5"
-                    />
-                  </Col>
-                </Row>
-              </Container>
-            </Container>
-
+            <Newsletter />
             <Container fluid="xxl" className="service-div py-5 wow fadeInUp">
               <Container className="px-lg-5">
                 <div className="S-section-title position-relative text-center mb-5 pb-2 wow fadeInUp">
@@ -227,9 +203,7 @@ describe: "We are a leading website design, web development, and digital marketi
                           tailor-made solutions should you need only a CMS, an
                           online shop, or a full-fledged website with a fully
                           responsive design.
-                          {/* Our services
-                          are created based on the needs of the client to suit
-                          the intended purpose. */}
+
                         </Card.Text>
                       </Card.Body>
                     </Card>
@@ -333,7 +307,7 @@ describe: "We are a leading website design, web development, and digital marketi
       </Container>
       <TeamSection />
       <TestimonialCarousel />
-      <AccordionSection faq={accord}  />
+      <AccordionSection faq={accord} />
     </div>
   );
 }

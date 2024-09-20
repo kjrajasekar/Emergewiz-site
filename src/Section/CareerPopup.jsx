@@ -14,7 +14,7 @@ function CareerPopup(props) {
   const onFormSubmit = (data) => {
     console.log(data);
     axios
-      .post("./mail.php", data)
+      .post("http://admin.emergewiz.com/api/send-email/", data)
       .then((response) => {
         console.log(response);
         alert("Message sent Successfully..");
