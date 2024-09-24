@@ -17,7 +17,16 @@
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
-  
+  .p-lh{
+    word-spacing: 2px !important;
+    line-height: 1.6 !important;
+  }
+  .copyright a{
+color: white;
+text-decoration: none;
+display: contents;
+
+  }
   .row.equal-cols:before,
   .row.equal-cols:after {
     display: block;

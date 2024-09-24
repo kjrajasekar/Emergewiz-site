@@ -57,7 +57,7 @@ const TestimonialCarousel = () => {
                                 <Col xs={12} lg={5}>
                                     <div className="testimonial-item">
                                         <FaQuoteLeft className='quote_icon' />
-                                        <p>{testimonial.content}</p>
+                                        <p className='p-lh'>{testimonial.content}</p>
                                         <div>
                                             <h6>{testimonial.author}</h6 >
                                             <p className='prof'>{testimonial.profession}</p>

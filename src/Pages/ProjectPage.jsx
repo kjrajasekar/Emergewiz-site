@@ -5,6 +5,8 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import '../CSS/ProjectPage.css'
 import ProductSection from '../Section/ProductSection';
+import Newsletter from "../Section/NewsletterSec";
+import ContactPopup from "../Section/ContactPopup";
 
 function ProjectPage() {
     const { pathname } = useLocation();
@@ -28,7 +30,8 @@ function ProjectPage() {
                 </Container>
             </Container>
             <ProductSection />
-
+            <ContactPopup />
+<Newsletter />
         </div>
     )
 }

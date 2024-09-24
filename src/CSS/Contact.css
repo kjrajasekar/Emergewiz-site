@@ -52,23 +52,19 @@ form label {
    color: grey;
 }
 
-form input {
+form input,textarea {
    margin-top: 1%;
-   width: 80%;
-   height: 40px;
+   width: 100%;
    border: none;
-   border-bottom: 1px solid grey;
+   border: 1px solid grey;
    color: black;
 }
 
-form textarea {
-   margin-top: 1%;
-   margin-bottom: 2%;
-   width: 80%;
-   border: none;
-   border-bottom: 1px solid grey;
-   color: black;
+form input {
+height: 40px;
 }
+
+
 
 input::placeholder,
 textarea::placeholder {

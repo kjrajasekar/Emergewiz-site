@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import { Container,Row,Col } from "react-bootstrap";
-// import '../CSS/ProjectPage.css'
 import CareerSection from "../Section/CareerSection";
 import Myhelmet from "./Myhelmet";
+import ContactPopup from "../Section/ContactPopup";
 
 function CareerPage() {
-
   const { pathname } = useLocation();
 
   // autoscroll to top
@@ -54,6 +53,7 @@ describe: "Looking for the best web development company in Coimbatore? We delive
             )}
           </Row>
         </Container>
+        <ContactPopup />
       </Container>
     </div>
   );

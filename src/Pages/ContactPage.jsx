@@ -3,7 +3,6 @@ import { useLocation } from "react-router-dom";
 import { Container } from "react-bootstrap";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-// import '../CSS/ProjectPage.css'
 import ContactSection from '../Section/ContactSection';
 import Myhelmet from "./Myhelmet";
 

@@ -6,12 +6,11 @@ import CountUp from "react-countup";
 
 function AboutSection() {
   return (
-    <Container fluid="xxl" className='service-div pb-5 wow fadeInUp' >
+    <Container fluid="xxl" className='mt-5 service-div pb-5 wow fadeInUp' >
       <Container className='px-lg-5 ' >
         <div className='S-section-title position-relative text-center mb-3 pb-2 wow fadeInUp'>
-
           <h2 className='Service-sub-title'>WHO WE ARE</h2>
-          <p className='mx-5 lh-base'>
+          <p className='m-5 p-lh'>
             EmergeWiz specializes in creating innovative and customized digital solutions tailored to meet the unique needs of each business. Their comprehensive range of services includes web design, web development, SEO, social media marketing, and PPC advertising. With a team of skilled professionals and a client-centric approach, EmergeWiz ensures that every project not only meets but exceeds client expectations, driving growth and success in the digital landscape.
           </p>
         </div>

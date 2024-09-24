@@ -99,7 +99,8 @@
 }
 
 .drop-link:hover{
-    background-color: rgb(226, 226, 226) !important;
+    background-color: #1863c9 !important;
+    color: white !important;
 }
 
 .dropdown-menu{

@@ -14,7 +14,6 @@ import logo from "./../Images/logo.png";
 import ContactPage from "../Pages/ContactPage";
 import { NavDropdown } from "react-bootstrap";
 import CareerPage from "../Pages/CareerPage";
-import Services from "../Section/WebServices";
 import WebServices from "../Section/WebServices";
 import MobileService from "../Section/MobileServices";
 
@@ -174,8 +173,10 @@ function Navibar() {
                 >
                   Career
                 </Nav.Link>
-
-                <Nav.Link
+                <Link to="/contact" className="py-3">
+                  <button className="btn btn-primary ">Contact Us</button>
+                </Link>
+                {/* <Nav.Link
                   onClick={handleClose}
                   as={Link}
                   to="/contact"
@@ -186,7 +187,7 @@ function Navibar() {
                   }`}
                 >
                   Contact
-                </Nav.Link>
+                </Nav.Link> */}
               </Nav>
             </Offcanvas.Body>
           </Navbar.Offcanvas>

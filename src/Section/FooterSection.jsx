@@ -1,85 +1,162 @@
-import portfolio_1 from '../Images/portfolio-1.jpg';
-import portfolio_2 from '../Images/portfolio-2.jpg';
-import portfolio_3 from '../Images/portfolio-3.jpg';
-import portfolio_4 from '../Images/portfolio-4.jpg';
-import portfolio_5 from '../Images/portfolio-5.jpg';
-import portfolio_6 from '../Images/portfolio-6.jpg';
-import { Container } from "react-bootstrap";
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Form from 'react-bootstrap/Form';
-import { FaLocationDot } from "react-icons/fa6";
-import { FaPhone } from "react-icons/fa6";
+import { Container,Row,Col,Form } from "react-bootstrap";
+import { FaLocationDot,FaLinkedinIn,FaPhone } from "react-icons/fa6";
 import { IoIosMail } from "react-icons/io";
-import { FaFacebookF } from "react-icons/fa";
-import { BsTwitterX } from "react-icons/bs";
-import { BsInstagram } from "react-icons/bs";
-import { FaLinkedinIn } from "react-icons/fa6";
+import { FaFacebookF,FaPaperPlane } from "react-icons/fa";
+import { BsTwitterX,BsInstagram } from "react-icons/bs";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
-import { FaPaperPlane } from "react-icons/fa";
-import { Link } from 'react-router-dom';
 import React from "react";
-import '../CSS/Footer.css';
+import { Link } from "react-router-dom";
+import "../CSS/Footer.css";
 
 function FooterSection() {
-    return(
-        <Container fluid='xxl' className="footer-div pt-5 wow fadeIn">
-            <Container className="py-5 px-lg-5">
-                <Row className="g-5 footer-row">
-                    <Col lg={3} xs={12}>
-                        <h5 className="mb-4 GIn-heading">Get In Touch</h5>
-                        <p className="p-tag mb-3"> <FaLocationDot className="GIn-icon me-2" />287/3, Standard Towers,<br />Avinashi Main Road, Peelamedu, ,<br />Coimbatore - 641 004</p>
-                        <p className="p-tag mb-3"> <FaPhone className="GIn-icon me-2" />+91- 98 40 64 26 67</p>
-                        <p className="p-tag mb-4"> <IoIosMail className="GIn-icon me-2" />contact@emergewiz.com</p>
-                        <div className='icon-div pt-2 d-flex'>
-                           <button className='GIn-socialM-icon me-3'><FaFacebookF /></button>
-                           <button className='GIn-socialM-icon me-3'><BsTwitterX /></button>
-                           <button className='GIn-socialM-icon me-3'><BsInstagram /></button>
-                           <button className='GIn-socialM-icon'><FaLinkedinIn /></button>
-                        </div>
-                    </Col>
-                    <Col lg={3} xs={12}>
-                        <h5 className="mb-4 link-heading">Link</h5>
-                        <p className="p-link"><MdOutlineKeyboardArrowRight className="right-arrow" /><Link to="/" className="linkS">Home</Link></p>
-                        <p className="p-link"><MdOutlineKeyboardArrowRight className="right-arrow"/><Link to="/about" className="linkS">About Us</Link></p>
-                        <p className="p-link"><MdOutlineKeyboardArrowRight className="right-arrow"/><Link to="/service" className="linkS">Service</Link></p>
-                        <p className="p-link"><MdOutlineKeyboardArrowRight className="right-arrow"/><Link to="/project" className="linkS">Project</Link></p>
-                        <p className="p-link"><MdOutlineKeyboardArrowRight className="right-arrow" /><Link to="/contact" className="linkS">Contact Us</Link></p>
-                    </Col>
-                    <Col lg={3} xs={12}>
-                       <h5 className="mb-4 link-heading">Gallery</h5>
-                       <Row className="g-2">
-                        <Col className='col-4'><img src={portfolio_1} alt="" className='img-fluid'/></Col>
-                        <Col className='col-4'><img src={portfolio_2} alt="" className='img-fluid'/></Col>
-                        <Col className='col-4'><img src={portfolio_3} alt="" className='img-fluid'/></Col>
-                        <Col className='col-4'><img src={portfolio_4} alt="" className='img-fluid'/></Col>
-                        <Col className='col-4'><img src={portfolio_5} alt="" className='img-fluid'/></Col>
-                        <Col className='col-4'><img src={portfolio_6} alt="" className='img-fluid'/></Col>
-                       </Row>
-                    </Col>
-                    <Col lg={3} xs={12}>
-                       <h5 className="mb-4 link-heading">Newsletter</h5>
-                        <p>
-                            Keep informed with our newest updates, trends, and valuable insights.
-                        </p>
-                        <Form>
-                            <Form.Group controlId="exampleForm.ControlInput1">
-                               <Form.Control type="email" placeholder="Enter Your Email" className="E-mail-bar" />
-                               <a href="/"><FaPaperPlane className='F-send-icon'  /></a>
-                            </Form.Group>
-                        </Form>
-                    </Col>
-                </Row>
-            </Container>
-            <Container className='px-lg-5'>
-                <div className='copyright'>
-                    <Row>
-                        <Col className='text-center md-3'>©Emergewiz,. All Right Reserved.</Col>
-                    </Row>
-                </div>
-            </Container>
-        </Container>
-    ) 
+  return (
+    <Container fluid="xxl" className="footer-div pt-3 wow fadeIn">
+      <Container className="py-5 px-lg-5">
+        <Row className="g-5 footer-row">
+        <Col lg={1} >
+        </Col>
+          <Col lg={2} xs={12}>
+            <h5 className="mb-4 link-heading">Company</h5>
+            <p className="p-link">
+              <MdOutlineKeyboardArrowRight className="right-arrow" />
+              <Link to="/" className="linkS">
+                Home
+              </Link>
+            </p>
+            <p className="p-link">
+              <MdOutlineKeyboardArrowRight className="right-arrow" />
+              <Link to="/about" className="linkS">
+                About Us
+              </Link>
+            </p>
+            <p className="p-link">
+              <MdOutlineKeyboardArrowRight className="right-arrow" />
+              <Link to="/service" className="linkS">
+                Service
+              </Link>
+            </p>
+            <p className="p-link">
+              <MdOutlineKeyboardArrowRight className="right-arrow" />
+              <Link to="/project" className="linkS">
+                Project
+              </Link>
+            </p>
+            <p className="p-link">
+              <MdOutlineKeyboardArrowRight className="right-arrow" />
+              <Link to="/contact" className="linkS">
+                Career
+              </Link>
+            </p>
+            <p className="p-link">
+              <MdOutlineKeyboardArrowRight className="right-arrow" />
+              <Link to="/contact" className="linkS">
+                Blogs
+              </Link>
+            </p>
+          </Col>
+          <Col lg={5} xs={12}>
+            <h5 className="mb-4 link-heading">Technologies</h5>
+            <p className="p-link">
+              <MdOutlineKeyboardArrowRight className="right-arrow" />
+              <Link to="/" className="linkS">
+                Web Development
+              </Link>
+            </p>
+            <p className="p-link">
+              <MdOutlineKeyboardArrowRight className="right-arrow" />
+              <Link to="/about" className="linkS">
+                App  Development
+              </Link>
+            </p>
+            <p className="p-link">
+              <MdOutlineKeyboardArrowRight className="right-arrow" />
+              <Link to="/service" className="linkS">
+                Software Testing 
+              </Link>
+            </p>
+            <p className="p-link">
+              <MdOutlineKeyboardArrowRight className="right-arrow" />
+              <Link to="/project" className="linkS">
+                Digital Marketing
+              </Link>
+            </p>
+            <p className="p-link">
+              <MdOutlineKeyboardArrowRight className="right-arrow" />
+              <Link to="/contact" className="linkS">
+                Graphics Designing
+              </Link>
+            </p>
+          </Col>
+         
+        
+       
+
+          <Col lg={4} xs={12}>
+            <h5 className="mb-4 GIn-heading">Get In Touch</h5>
+            <p className="p-tag mb-3">
+              <Row>
+                <Col xs={1}>
+                  <FaLocationDot className="GIn-icon me-2" />
+                </Col>
+                <Col xs={11}>
+                  {" "}
+                  287/3, Standard Towers,
+                  <br />
+                  Avinashi Main Road, Peelamedu, <br />
+                  Coimbatore - 641 004
+                </Col>
+              </Row>
+            </p>
+            <p className="p-tag mb-3">
+              <Row>
+                <Col xs={1}>
+                  <FaPhone className="GIn-icon me-2" />
+                </Col>
+                <Col xs={11}>+91- 98 40 64 26 67 </Col>
+              </Row>
+            </p>
+            <p className="p-tag mb-4">
+              <Row>
+                <Col xs={1}>
+                  <IoIosMail className="GIn-icon me-2" />
+                </Col>
+                <Col xs={11}>contact@emergewiz.com </Col>
+              </Row>
+            </p>
+
+            <div className="icon-div pt-2 d-flex">
+              <button className="GIn-socialM-icon me-3">
+                <FaFacebookF />
+              </button>
+              <button className="GIn-socialM-icon me-3">
+                <BsTwitterX />
+              </button>
+              <button className="GIn-socialM-icon me-3">
+                <BsInstagram />
+              </button>
+              <button className="GIn-socialM-icon">
+                <FaLinkedinIn />
+              </button>
+            </div>
+          </Col>
+        </Row>
+      </Container>
+      <Container className="px-lg-5">
+        <div className="copyright">
+          <Row>
+         <Link className="brand-link ml-2"> Terms & Conditions </Link>  &nbsp; |   &nbsp;
+         <Link className="brand-link ml-2">Refund Policy </Link>  &nbsp; |   &nbsp;
+         <Link className="brand-link ml-2"> Privacy Policy </Link>  &nbsp; |   &nbsp;
+         <Link className="brand-link ml-2"> Delivery & Shipping</Link>  &nbsp; |   &nbsp;
+         <Link className="brand-link ml-2">Disclaimer</Link>  &nbsp;  
+            <Col className="text-center md-3">
+              ©Emergewiz,. All Right Reserved.
+            </Col>
+          </Row>
+        </div>
+      </Container>
+    </Container>
+  );
 }
 
 export default FooterSection;

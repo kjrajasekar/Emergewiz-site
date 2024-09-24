@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { Container } from "react-bootstrap";
 import { Row, Col, Card } from "react-bootstrap";
-import "../CSS/ServicePage.css";
 import { FaPaperPlane } from "react-icons/fa";
 import Form from "react-bootstrap/Form";
 import HeroSection from "./HeroSection";
@@ -12,6 +11,7 @@ import TestimonialCarousel from "./FeedbackSection";
 import AccordionSection from "./AccordionSection";
 import Myhelmet from "../Pages/Myhelmet";
 import Newsletter from "./NewsletterSec";
+import ContactPopup from "./ContactPopup";
 
 function WebServices() {
   const { pathname } = useLocation();
@@ -66,7 +66,7 @@ function WebServices() {
             <h2 className="Service-sub-title mt-5">
               Web development company in Coimbatore
             </h2>
-            <p className="mx-5 lh-base text-start mt-4">
+            <p className="mx-5 p-lh text-start mt-4">
               EmergeWiz is a top <b>web development company in Coimbatore,</b>{" "}
               offering exceptional web development solutions designed to elevate
               your business. Our services include custom website design and
@@ -80,7 +80,7 @@ function WebServices() {
               responsive, informative, and conversion-focused websites for
               affordable prices.
             </p>
-            <p className="mx-5 lh-base text-start">
+            <p className="mx-5 p-lh text-start">
               We have a team of highly skilled and experienced{" "}
               <b>Web designers and developers in Coimbatore</b> Who are
               dedicated to delivering exceptional results. They are committed to
@@ -90,14 +90,14 @@ function WebServices() {
               and, more significantly, conversion-oriented websites for your
               enterprise.
             </p>
-
             <h2 className="Service-sub-title mt-5">
               Our Key Features of Web Designing Services in Coimbatore
             </h2>
-            <Row>
-              <Col xs={12} md={6}>
-                <p className="mycard mx-3 lh-base text-start mt-3">
-                  <b>Customized Solutions: </b>EmergeWiz is a well-established{" "}
+            <Row className="mt-4  ">
+              <Col xs={12} md={5} className="mycard mx-5 my-2 ">
+                <h4 text-center>Customized Solutions </h4>
+                <p className=" text-start  p-lh m-3">
+                  EmergeWiz is a well-established{" "}
                   <b>web development company in Coimbatore</b> and we are ready
                   to offer you web solutions according to your business
                   requirements. We work on the principles of exclusivity to
@@ -105,43 +105,44 @@ function WebServices() {
                   specifications as well as goals for your company brand.
                 </p>
               </Col>
-              <Col xs={12} md={6}>
-                <p className="mycard mx-3 lh-base text-start mt-3">
-                  <b>Innovative Design:</b> EmergeWiz is tackling the provision
-                  of stunning and distinctive web designs that can help
-                  differentiate the brand of your business. We combine
-                  creativity with the purposes to make sure our design vision is
-                  both aesthetically pleasing and effective in meeting your
-                  company’s goals as well as improving customers’ experience.
+              <Col xs={12} md={5} className=" mycard mx-5 my-2  ">
+                <h4 text-center>Innovative Design</h4>
+                <p className=" text-start   p-lh m-3">
+                  EmergeWiz is tackling the provision of stunning and
+                  distinctive web designs that can help differentiate the brand
+                  of your business. We combine creativity with the purposes to
+                  make sure our design vision is both aesthetically pleasing and
+                  effective in meeting your company’s goals as well as improving
+                  customers’ experience.
                 </p>
               </Col>
             </Row>
             <Row>
-              <Col xs={12} md={6}>
-                <p className="mycard mx-3 lh-base text-start mt-3">
-                  <b>Responsive Development:</b> We guarantee that all sites
-                  designed at PearliePop are clear and compatible with all sorts
-                  of devices. None of the designs/developments are a
-                  one-size-fits-all proposition and even more so when it comes
-                  to mobile web design/development that targets audiences across
-                  multiple platforms/desktops and devices/OS.
+              <Col xs={12} md={5} className="mycard mx-5 my-2">
+                <h4>Responsive Development</h4>
+                <p className="  p-lh text-start m-3">
+                  We guarantee that all sites designed at PearliePop are clear
+                  and compatible with all sorts of devices. None of the
+                  designs/developments are a one-size-fits-all proposition and
+                  even more so when it comes to mobile web design/development
+                  that targets audiences across multiple platforms/desktops and
+                  devices/OS.
                 </p>
               </Col>
-              <Col xs={12} md={6}>
-                <p className="mycard mx-3 lh-base text-start mt-3">
-                  <b>Affordable Quality: </b>We specialize in affordable and
-                  professional <b>web design services in Coimbatore</b>. Our
-                  primary concern is to provide the best possible solutions at
-                  an affordable price that gives you great results on your
-                  investment, allowing you to obtain a professional and
-                  efficient web presence.
+              <Col xs={12} md={5} className="mycard mx-5 my-2">
+                <h4>Affordable Quality: </h4>
+                <p className=" p-lh text-start m-3">
+                  We specialize in affordable and professional{" "}
+                  <b>web design services in Coimbatore</b>. Our primary concern
+                  is to provide the best possible solutions at an affordable
+                  price that gives you great results on your investment,
+                  allowing you to obtain a professional and efficient web
+                  presence.
                 </p>
               </Col>
             </Row>
           </div>
-
           <div>
-            <Newsletter />
             <Container fluid="xxl" className="service-div py-5 wow fadeInUp">
               <Container className="px-lg-5">
                 <div className="S-section-title position-relative text-center mb-5 pb-2 wow fadeInUp">
@@ -149,7 +150,7 @@ function WebServices() {
                     Why prefer EmergeWiz for Web designing Services in
                     Coimbatore?
                   </h2>
-                  <p className="mx-5 lh-base">
+                  <p className="mx-5 p-lh mt-4">
                     EmergeWiz is a leading{" "}
                     <b>web development company in Coimbatore</b>, recognized for
                     its innovative solutions and commitment to client-centric
@@ -159,7 +160,6 @@ function WebServices() {
                     industry
                   </p>
                 </div>
-
                 <Row className="g-4 equal-cols myweb text-start">
                   <Col
                     lg={4}
@@ -172,7 +172,7 @@ function WebServices() {
                         <Card.Title className="mb-3">
                           Expertise and Experience
                         </Card.Title>
-                        <Card.Text>
+                        <Card.Text className="p-lh">
                           Taking years of experience in the web development
                           industry, our dedicated professionals ensure high
                           quality and efficiency in all works. Now it is
@@ -195,7 +195,7 @@ function WebServices() {
                         <Card.Title className="mb-3">
                           Customized Solutions
                         </Card.Title>
-                        <Card.Text>
+                        <Card.Text className="p-lh">
                           To help you understand better, every business has its
                           own set goals and objectives on the balance sheets.
                           Being one of the leading{" "}
@@ -203,7 +203,6 @@ function WebServices() {
                           tailor-made solutions should you need only a CMS, an
                           online shop, or a full-fledged website with a fully
                           responsive design.
-
                         </Card.Text>
                       </Card.Body>
                     </Card>
@@ -219,7 +218,7 @@ function WebServices() {
                         <Card.Title className="mb-3">
                           User-Centric Design
                         </Card.Title>
-                        <Card.Text>
+                        <Card.Text className="p-lh">
                           To us, the creation of a perfect website entails
                           realizing a great user experience or UX website. Being
                           one of the leading web design company in Coimbatore,
@@ -241,7 +240,7 @@ function WebServices() {
                         <Card.Title className="mb-3">
                           SEO-Optimized Websites
                         </Card.Title>
-                        <Card.Text>
+                        <Card.Text className="p-lh">
                           We at EmergeWiz ensure that websites that we design
                           meet the SEO guidelines that a site such as Google
                           requires. This involves issues such as the absence of
@@ -263,16 +262,13 @@ function WebServices() {
                         <Card.Title className="mb-3">
                           Client-Centric Approach
                         </Card.Title>
-                        <Card.Text>
+                        <Card.Text className="p-lh">
                           We believe in maintaining a professional and long-term
                           partnership with the clients. This is why at
                           EmergeWiz, we dedicate time to understanding your
                           business, your goals, and your vision. At each stage
                           of development, you are kept informed and updated and
                           your input is encouraged and acknowledged.
-                          {/* We pride
-                          ourselves in ensuring customers are fully satisfied at
-                          all times. */}
                         </Card.Text>
                       </Card.Body>
                     </Card>
@@ -288,7 +284,7 @@ function WebServices() {
                         <Card.Title className="mb-3">
                           Support and Maintenance
                         </Card.Title>
-                        <Card.Text>
+                        <Card.Text className="p-lh">
                           At EmergeWiz, our commitment doesn’t end with the
                           website launch. We offer continuous support and
                           maintenance to keep your website updated, secure, and
@@ -308,6 +304,8 @@ function WebServices() {
       <TeamSection />
       <TestimonialCarousel />
       <AccordionSection faq={accord} />
+      <ContactPopup />
+      <Newsletter />
     </div>
   );
 }

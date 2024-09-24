@@ -3,8 +3,8 @@ import { Row, Col } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { Container } from "react-bootstrap";
-import '../CSS/Service.css'
 import { FaHome } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 function ServiceSection() {
     return (
@@ -12,14 +12,11 @@ function ServiceSection() {
             <Container className='px-lg-5'>
                 <div className='S-section-title position-relative text-center mb-5 pb-2 wow fadeInUp'>
                     <h2 className='Service-sub-title'>What Solutions We Provide</h2>
-                    <p className='mx-5 lh-base'>
+                    <p className='m-4 p-lh' >
                         An innovative IT company specializing in website development, digital marketing, mobile app creation, graphic design. Transform your online presence and reach new heights with our comprehensive, expert services.
-
                     </p>
                 </div>
-
                 <Row className='g-4 equal-cols'>
-
                     <Col lg={4} md={6} className=' animated wow zoomIn SEO-Optimization' data-wow-delay="0.3s">
                         <Card className='service-item '>
                             <Card.Body className='card-body'>
@@ -28,7 +25,7 @@ function ServiceSection() {
                                 <Card.Text  >
                                     Accelerate Your Business Transformation with Our Comprehensive Web Development Services.
                                 </Card.Text>
-                                <Button className='rad-mor  '>Read More</Button>
+                                <Link to="/service/web"><Button className='rad-mor  '>Read More</Button></Link>
                             </Card.Body>
                         </Card>
                     </Col>
@@ -42,7 +39,7 @@ function ServiceSection() {
                                 <Card.Text  >
                                     Developing high-performance  apps tailored to your business needs, drive user engagement and foster connections with customers.
                                 </Card.Text>
-                                <Button className='rad-mor '>Read More</Button>
+                                <Link to="/service/web"><Button className='rad-mor '>Read More</Button></Link>
                             </Card.Body>
                         </Card>
                     </Col>
@@ -54,7 +51,7 @@ function ServiceSection() {
                                 <Card.Text  >
                                     We have a team of skilled designers who design intuitive interfaces that elevate user experiences and deliver outstanding results.
                                 </Card.Text>
-                                <Button className='rad-mor '>Read More</Button>
+                                <Link to="/service/web"><Button className='rad-mor '>Read More</Button></Link>
                             </Card.Body>
                         </Card>
                     </Col>

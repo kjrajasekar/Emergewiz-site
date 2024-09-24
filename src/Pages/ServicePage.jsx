@@ -3,8 +3,8 @@ import { useLocation } from "react-router-dom";
 import { Container } from "react-bootstrap";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import '../CSS/ServicePage.css'
 import ServiceSection from '../Section/ServiceSection';
+import Newsletter from "../Section/NewsletterSec";
 
 function ServicePage() {
     const { pathname } = useLocation();
@@ -27,7 +27,7 @@ function ServicePage() {
                 </Container>
             </Container>
             <ServiceSection/>
-
+<Newsletter />
         </div>
     )
 }

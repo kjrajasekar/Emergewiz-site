@@ -16,6 +16,11 @@ import Newsletter from "./NewsletterSec";
 function MobileService() {
   const { pathname } = useLocation();
 
+  let mystyle={
+    oveFlow:"hidden !important",
+    webKitLineClamp:"9",
+
+  }
   // autoscroll to top
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -160,7 +165,7 @@ function MobileService() {
                         <Card.Title className="mb-3">
                           Experienced Team of Experts
                         </Card.Title>
-                        <Card.Text>
+                        <Card.Text style={{mystyle}}>
                           Our team of talented and proficient developers,
                           designers, and project managers in our Mobile
                           Application Development Company Coimbatore has many
@@ -182,7 +187,7 @@ function MobileService() {
                         <Card.Title className="mb-3">
                           Client-Centric Approach
                         </Card.Title>
-                        <Card.Text>
+                        <Card.Text style={{mystyle}}>
                           At EmergeWiz, the main focus is always the client, We
                           are focused on the client's needs, meaning each app to
                           be created corresponds to your expectations and
@@ -205,7 +210,7 @@ function MobileService() {
                         <Card.Title className="mb-3">
                           Focus on Quality and Innovation
                         </Card.Title>
-                        <Card.Text>
+                        <Card.Text style={{mystyle}}>
                           This has always been a primary consideration for DMH
                           and all that it does. Our goal is to provide
                           high-quality applications intuitive but also unique

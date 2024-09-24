@@ -76,11 +76,11 @@
 }
 
 .hire-item p {
-  font-size: 1rem;
+  /* font-size: 1rem; */
   color: #666;
   margin-bottom: 1rem;
   line-height: 25px;
-  text-align: justify;
+  /* text-align: justify; */
 }
 
 @media screen and (max-width:600px) {
