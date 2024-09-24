@@ -21,6 +21,10 @@
     word-spacing: 2px !important;
     line-height: 1.6 !important;
   }
+  .ic-size{
+    width: 40px;
+    height: 40px;
+  }
   .copyright a{
 color: white;
 text-decoration: none;
@@ -30,6 +34,21 @@ display: contents;
   .row.equal-cols:before,
   .row.equal-cols:after {
     display: block;
+  }
+  .cl-prime{
+    color: #1863c9 !important;
+  }
+  .cl-green{
+    color: #0aac47 !important;
+  }
+  .cl-red{
+    color: red !important;
+  }
+  .bg-prime{
+    background-color: #1863c9 !important;
+  }
+  .bg-white{
+    background-color: white !important;
   }
   
   .row.equal-cols > [class*='col-'] {

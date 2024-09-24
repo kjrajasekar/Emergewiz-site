@@ -26,7 +26,7 @@ function ProductSection() {
                 <img src={smartstorez} alt="smartstorez" className="w-75" />
                 <h4 className="text-center">Smartstorez</h4>
                 <p className="m-3 mb-5 p-lh text-start">
-                  Smartstorez provides a powerful multi-vendor marketplace
+                  Smartstorez provides a powerful E-commerce
                   software designed for businesses. Key features include product
                   management, product reviews, tax handling, user management,
                   inventory tracking, discounts, detailed reports, integrated

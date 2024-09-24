@@ -17,7 +17,7 @@ function ContactSection() {
         // formData.append('phone_no',data.phone_no);
         // formData.append('message',data.message);
         
-        axios.post("http://admin.emergewiz.com/api/send-contact-email/", data)
+        axios.post("https://admin.emergewiz.com/api/send-contact-email/", data)
             .then((response) => {
                 alert("Message sent Successfully..")
                 resetting()
@@ -48,7 +48,7 @@ function ContactSection() {
 
                 <Row className="equal-cols  product-section gx-5 shadow bg-light  bg-body rounded">
                     <Col xs={12} lg={5} className=''>
-                        <div className="   " style={{backgroundColor:"#1863c9"}}>
+                        <div className=" bg-prime  " >
                             <div className="container text-start text-light px-5 py-4">
                                 <h3  className=" text-light">Phone</h3>
                                 <FaPhone />
@@ -74,12 +74,12 @@ function ContactSection() {
                                 </span>
                             </div>
                         </div>
-                        <Row style={{backgroundColor:"#1863c9"}} className="p-3 mx-0">
+                        <Row  className="p-3 mx-0 bg-prime">
                     <iframe title="Emergewiz-location" src=" https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3293.109185713824!2d77.01117902326185!3d11.024451547001405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba857730bb2abd5%3A0x27a2cfe9b594b986!2sEmergewiz%20Technologies%20Private%20Limited!5e0!3m2!1sen!2sin!4v1719230697391!5m2!1sen!2sin"   height="250" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                 </Row>
                     </Col>
                     <Col xs={12} lg={6} className='contact  ' >
-                        <div className='hire-item' style={{backgroundColor:"white"}}>
+                        <div className='hire-item bg-white'  >
                             <h1>Contact <span> us</span></h1>
                             <form id='contact-form' onSubmit={handleSubmit(onFormSubmit)} >
                                <Row>
@@ -90,7 +90,7 @@ function ContactSection() {
                                         value: /^[a-zA-z ]+$/, message: "enter valid name"
                                     }
                                 })} placeholder='Enter full name...' type='text' />
-                                <span style={{ color: "red" }}> {errors?.name && errors.name.message}</span>
+                                <span className="cl-red"> {errors?.name && errors.name.message}</span>
                                 </Col>
                                 <Col xs={12} lg={6}>
                                 <label htmlFor='phone_no'>Phone *</label>
@@ -99,7 +99,7 @@ function ContactSection() {
                                         value: /^[0-9]{10}$/, message: "enter valid phone number"
                                     }
                                 })} />
-                                <span style={{ color: "red" }}> {errors?.phone_no && errors.phone_no.message}</span>
+                                <span className="cl-red"> {errors?.phone_no && errors.phone_no.message}</span>
                                 </Col>
                                 
                                 </Row>
@@ -111,7 +111,7 @@ function ContactSection() {
                                         value: /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$/, message: "enter valid email"
                                     }
                                 })} />
-                                <span style={{ color: "red" }}> {errors?.email && errors.email.message}</span>
+                                <span className="cl-red"> {errors?.email && errors.email.message}</span>
                                 </Col>
                                 <Col xs={12}  >
                                 <label htmlFor='message'>Message</label>
@@ -123,7 +123,7 @@ function ContactSection() {
                                     })}
                                     placeholder='Enter message...'
                                 ></textarea>
-                                < span style={{ color: "red" }}> {errors?.message && errors.message.message}</span>
+                                < span  className="cl-red"> {errors?.message && errors.message.message}</span>
                                 </Col>
                                 <Col xs={12} >
                                 <button type='submit' id='formButton' className="mt-5"> Send message</button>

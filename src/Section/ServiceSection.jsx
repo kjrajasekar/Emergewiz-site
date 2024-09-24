@@ -6,6 +6,7 @@ import { Container } from "react-bootstrap";
 import { FaHome } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 
+
 function ServiceSection() {
     return (
         <Container fluid="xxl" className='service-div py-5 wow fadeInUp'>

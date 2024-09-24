@@ -16,21 +16,33 @@ function CareerSection(props) {
       className="career animated wow zoomIn SEO-Optimization "
       data-wow-delay="0.3s"
     >
-      <Card className="service-item ">
-        <Card.Body className="card-body">
-          <Card.Title className="mb-3">{props.jobs.job_title} </Card.Title>
-          <p>
-            <p>
-              Description <br /> {props.jobs.description}
-            </p>
-            <p>
-              Salary : <br /> {props.jobs.salary}
-            </p>
-            <p>
-              Location : <br /> {props.jobs.location}
-            </p>
-          </p>
-          <Button className="rad-mor  " onClick={togglePopup}>
+      <Card className="mx-auto px-5 py-2 w-100 mb-5">
+        <Card.Body className="card-body pt-2">
+          <h5 className="cl-prime">{props.jobs.job_title} </h5>
+          <Row >
+            <Col className="py-2  p-lh">
+              <p>
+                <b>Description </b><br /> {props.jobs.description}
+              </p>
+            </Col>
+            <Col className="py-2  p-lh">
+              <p>
+                <b>Experience <br /></b> {props.jobs.experience}
+              </p>
+            </Col>
+            <Col className="py-2  p-lh">
+              <p>
+                <b>Salary <br /></b> {props.jobs.salary}
+              </p>
+            </Col >
+            <Col className="py-2  p-lh">
+              <p>
+               <b> Location  </b><br /> {props.jobs.location}
+              </p>
+            </Col>
+          </Row>
+
+          <Button className="btn btn-primary  float-end" onClick={togglePopup}>
             Apply Now
           </Button>
         </Card.Body>

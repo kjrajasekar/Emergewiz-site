@@ -43,7 +43,7 @@ function FooterSection() {
             </p>
             <p className="p-link">
               <MdOutlineKeyboardArrowRight className="right-arrow" />
-              <Link to="/contact" className="linkS">
+              <Link to="/career" className="linkS">
                 Career
               </Link>
             </p>
@@ -58,13 +58,13 @@ function FooterSection() {
             <h5 className="mb-4 link-heading">Technologies</h5>
             <p className="p-link">
               <MdOutlineKeyboardArrowRight className="right-arrow" />
-              <Link to="/" className="linkS">
+              <Link to="/service/web" className="linkS">
                 Web Development
               </Link>
             </p>
             <p className="p-link">
               <MdOutlineKeyboardArrowRight className="right-arrow" />
-              <Link to="/about" className="linkS">
+              <Link to="/service/mobile" className="linkS">
                 App  Development
               </Link>
             </p>
@@ -76,7 +76,7 @@ function FooterSection() {
             </p>
             <p className="p-link">
               <MdOutlineKeyboardArrowRight className="right-arrow" />
-              <Link to="/project" className="linkS">
+              <Link to="/service" className="linkS">
                 Digital Marketing
               </Link>
             </p>
@@ -87,8 +87,7 @@ function FooterSection() {
               </Link>
             </p>
           </Col>
-         
-        
+             
        
 
           <Col lg={4} xs={12}>

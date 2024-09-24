@@ -13,7 +13,7 @@ function Newsletter() {
   } = useForm();
   const onFormSubmit = (data) => {
     axios
-      .post("http://admin.emergewiz.com/api/send-contact-email/", data)
+      .post("https://admin.emergewiz.com/api/send-contact-email/", data)
       .then((response) => {
         alert("Message sent Successfully..");
         resetting();
@@ -53,7 +53,7 @@ function Newsletter() {
               <Row>
                 <Col xs={12} lg={4}>
                   <label htmlFor="name">Full Name *</label>
-                  <input
+                  <input className="p-2"
                     name="name"
                     {...register("name", {
                       required: "Name is required",
@@ -65,7 +65,7 @@ function Newsletter() {
                     placeholder="Enter full name..."
                     type="text"
                   />
-                  <span style={{ color: "red" }}>
+                  <span className="cl-red">
                     {" "}
                     {errors?.name && errors.name.message}
                   </span>
@@ -73,7 +73,7 @@ function Newsletter() {
                 <Col xs={12} lg={4}>
                   <label htmlFor="email">Email *</label>
                   <br />
-                  <input
+                  <input className="p-2"
                     name="email"
                     placeholder="Enter email..."
                     type="email"
@@ -86,7 +86,7 @@ function Newsletter() {
                       },
                     })}
                   />
-                  <span style={{ color: "red" }}>
+                  <span className="cl-red">
                     {" "}
                     {errors?.email && errors.email.message}
                   </span>
@@ -94,7 +94,7 @@ function Newsletter() {
                 <Col xs={12} lg={4}>
                   <label htmlFor="phone_no">Phone *</label>
                   <br />
-                  <input
+                  <input className="p-2"
                     name="phone_no"
                     placeholder="Enter Phone Number..."
                     type="number"
@@ -106,7 +106,7 @@ function Newsletter() {
                       },
                     })}
                   />
-                  <span style={{ color: "red" }}>
+                  <span className="cl-red">
                     {" "}
                     {errors?.phone_no && errors.phone_no.message}
                   </span>
@@ -117,7 +117,7 @@ function Newsletter() {
                   {" "}
                   <label htmlFor="message">Message</label>
                   <br />
-                  <textarea
+                  <textarea className="p-2"
                     name="message"
                     rows="3"
                     {...register("message", {
@@ -125,7 +125,7 @@ function Newsletter() {
                     })}
                     placeholder="Enter message..."
                   ></textarea>
-                  <span style={{ color: "red" }}>
+                  <span className="cl-red">
                     {" "}
                     {errors?.message && errors.message.message}
                   </span>

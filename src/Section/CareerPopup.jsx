@@ -25,7 +25,7 @@ function CareerPopup(props) {
     //   console.log(key, value);
     // });
     axios
-      .post("http://admin.emergewiz.com/api/send-email/", formData)
+      .post("https://admin.emergewiz.com/api/send-email/", formData)
       .then((response) => {
         alert("Email Sent Successfully...");
         resetting();
@@ -53,11 +53,11 @@ const fileupload=(e) => {
           x
         </span>
         <h3>{props.content}</h3>
-        <p className="mt-3">
+        <p className="mt-3 cl-prime">
           {" "}
           share your resume to <h5>hr@emergewiz.com</h5>
         </p>
-        <p className="mt-3">
+        <p className="mt-3 cl-prime">
           {" "}
          Designation <h5>{props.result}</h5>
         </p>
@@ -76,7 +76,7 @@ const fileupload=(e) => {
               placeholder="Enter full name..."
               type="text"
             />
-            <span style={{ color: "red" }}>
+            <span className="cl-red">
               {" "}
               {errors?.name && errors.name.message}
             </span>
@@ -93,7 +93,7 @@ const fileupload=(e) => {
                 },
               })}
             />
-            <span style={{ color: "red" }}>
+            <span  className="cl-red">
               {" "}
               {errors?.email && errors.email.message}
             </span>
@@ -109,7 +109,7 @@ const fileupload=(e) => {
                 },
               })}
             />
-            <span style={{ color: "red" }}>
+            <span className="cl-red">
               {" "}
               {errors?.phone_no && errors.phone_no.message}
             </span>

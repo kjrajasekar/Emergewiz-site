@@ -46,7 +46,8 @@ function HeroSection(props) {
               {data[0].para.split("\n").map((i, key) => {
                 return (
                   <p
-                    style={{ lineHeight: "1.6", wordSpacing: "2px" }}
+                  className="p-lh"
+                    // style={{ lineHeight: "1.6", wordSpacing: "2px" }}
                     key={key}
                   >
                     {i}

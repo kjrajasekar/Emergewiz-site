@@ -16,7 +16,7 @@ function CareerPage() {
 
   const [data, setdata] = useState([]);
   useEffect(() => {
-    fetch("http://admin.emergewiz.com/api/job_openings/")
+    fetch("https://admin.emergewiz.com/api/job_openings/")
       .then((response) => response.json())
       .then((data) => setdata(data))
       .catch((error) => console.error("Error fetching data:", error));
@@ -42,8 +42,16 @@ describe: "Looking for the best web development company in Coimbatore? We delive
         </Container>
       </Container>
       <Container fluid="xxl" className="service-div py-5 wow fadeInUp">
-        <Container className="px-lg-5">
+        <Container className="px-lg-5 text-center">
+          <Row  >
+          <h3 >Jobs @ Emergewiz</h3>
+         <p className="p-lh "> Provide your details, and we present you the right opportunity. <br />Submit your resume with us along with a cover letter to hr@emergewiz.com</p>
+          </Row>
           <Row className="g-4 equal-cols" >
+
+          <h3 className=" text-center  project-page-heading mt-5">
+          Current job openings
+              </h3>
             {data ? (
               data.map((job) => {
                 if (job.status) return <CareerSection jobs={job} />;

@@ -11,13 +11,14 @@ import TestimonialCarousel from "./FeedbackSection";
 import AccordionSection from "./AccordionSection";
 import Myhelmet from "../Pages/Myhelmet";
 import Newsletter from "./NewsletterSec";
+import ContactPopup from "./ContactPopup";
 
 
 function MobileService() {
   const { pathname } = useLocation();
 
   let mystyle={
-    oveFlow:"hidden !important",
+    overFlow:"hidden !important",
     webKitLineClamp:"9",
 
   }
@@ -231,7 +232,8 @@ function MobileService() {
       <TeamSection />
       <TestimonialCarousel />
       <AccordionSection faq={accord} />
-
+      <ContactPopup />
+      <Newsletter />
     
     </div>
   );

@@ -93,9 +93,9 @@ function WebServices() {
             <h2 className="Service-sub-title mt-5">
               Our Key Features of Web Designing Services in Coimbatore
             </h2>
-            <Row className="mt-4  ">
-              <Col xs={12} md={5} className="mycard mx-5 my-2 ">
-                <h4 text-center>Customized Solutions </h4>
+            <Row className="mt-4 bg-light ">
+              <Col  className=" mycard my-2 ">
+                <h4 className="text-center cl-green">Customized Solutions </h4>
                 <p className=" text-start  p-lh m-3">
                   EmergeWiz is a well-established{" "}
                   <b>web development company in Coimbatore</b> and we are ready
@@ -105,8 +105,8 @@ function WebServices() {
                   specifications as well as goals for your company brand.
                 </p>
               </Col>
-              <Col xs={12} md={5} className=" mycard mx-5 my-2  ">
-                <h4 text-center>Innovative Design</h4>
+              <Col  className=" mycard  my-2  ">
+                <h4 className="text-center cl-green">Innovative Design</h4>
                 <p className=" text-start   p-lh m-3">
                   EmergeWiz is tackling the provision of stunning and
                   distinctive web designs that can help differentiate the brand
@@ -116,10 +116,9 @@ function WebServices() {
                   customers’ experience.
                 </p>
               </Col>
-            </Row>
-            <Row>
-              <Col xs={12} md={5} className="mycard mx-5 my-2">
-                <h4>Responsive Development</h4>
+         
+              <Col  className="mycard my-2">
+                <h4 className="text-center cl-green">Responsive Development</h4>
                 <p className="  p-lh text-start m-3">
                   We guarantee that all sites designed at PearliePop are clear
                   and compatible with all sorts of devices. None of the
@@ -129,8 +128,8 @@ function WebServices() {
                   devices/OS.
                 </p>
               </Col>
-              <Col xs={12} md={5} className="mycard mx-5 my-2">
-                <h4>Affordable Quality: </h4>
+              <Col  className=" mycard my-2">
+                <h4 className="text-center cl-green">Affordable Quality: </h4>
                 <p className=" p-lh text-start m-3">
                   We specialize in affordable and professional{" "}
                   <b>web design services in Coimbatore</b>. Our primary concern
